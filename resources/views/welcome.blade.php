@@ -1,172 +1,1795 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en-US" class="no-js">
 
-        <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
-        <!-- Styles -->
-        <style>
-            /* ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Figtree, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.absolute{position:absolute}.relative{position:relative}.-left-20{left:-5rem}.top-0{top:0px}.-bottom-16{bottom:-4rem}.-left-16{left:-4rem}.-mx-3{margin-left:-0.75rem;margin-right:-0.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-video{aspect-ratio:16 / 9}.size-12{width:3rem;height:3rem}.size-5{width:1.25rem;height:1.25rem}.size-6{width:1.5rem;height:1.5rem}.h-12{height:3rem}.h-40{height:10rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-full{width:100%}.w-\[calc\(100\%\+8rem\)\]{width:calc(100% + 8rem)}.w-auto{width:auto}.max-w-\[877px\]{max-width:877px}.max-w-2xl{max-width:42rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.gap-2{gap:0.5rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.self-center{align-self:center}.overflow-hidden{overflow:hidden}.rounded-\[10px\]{border-radius:10px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-sm{border-radius:0.125rem}.bg-\[\#FF2D20\]\/10{background-color:rgb(255 45 32 / 0.1)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-white{--tw-gradient-to:rgb(255 255 255 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-white{--tw-gradient-to:#fff var(--tw-gradient-to-position)}.stroke-\[\#FF2D20\]{stroke:#FF2D20}.object-cover{object-fit:cover}.object-top{object-position:top}.p-6{padding:1.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.pt-3{padding-top:0.75rem}.text-center{text-align:center}.font-sans{font-family:Figtree, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-sm\/relaxed{font-size:0.875rem;line-height:1.625}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-semibold{font-weight:600}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-\[0px_14px_34px_0px_rgba\(0\2c 0\2c 0\2c 0\.08\)\]{--tw-shadow:0px 14px 34px 0px rgba(0,0,0,0.08);--tw-shadow-colored:0px 14px 34px 0px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-transparent{--tw-ring-color:transparent}.ring-white\/\[0\.05\]{--tw-ring-color:rgb(255 255 255 / 0.05)}.drop-shadow-\[0px_4px_34px_rgba\(0\2c 0\2c 0\2c 0\.06\)\]{--tw-drop-shadow:drop-shadow(0px 4px 34px rgba(0,0,0,0.06));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-\[0px_4px_34px_rgba\(0\2c 0\2c 0\2c 0\.25\)\]{--tw-drop-shadow:drop-shadow(0px 4px 34px rgba(0,0,0,0.25));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-\[\#FF2D20\] *::selection{--tw-bg-opacity:1;background-color:rgb(255 45 32 / var(--tw-bg-opacity))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.selection\:bg-\[\#FF2D20\]::selection{--tw-bg-opacity:1;background-color:rgb(255 45 32 / var(--tw-bg-opacity))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.hover\:text-black:hover{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity))}.hover\:text-black\/70:hover{color:rgb(0 0 0 / 0.7)}.hover\:ring-black\/20:hover{--tw-ring-color:rgb(0 0 0 / 0.2)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus-visible\:ring-1:focus-visible{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus-visible\:ring-\[\#FF2D20\]:focus-visible{--tw-ring-opacity:1;--tw-ring-color:rgb(255 45 32 / var(--tw-ring-opacity))}@media (min-width: 640px){.sm\:size-16{width:4rem;height:4rem}.sm\:size-6{width:1.5rem;height:1.5rem}.sm\:pt-5{padding-top:1.25rem}}@media (min-width: 768px){.md\:row-span-3{grid-row:span 3 / span 3}}@media (min-width: 1024px){.lg\:col-start-2{grid-column-start:2}.lg\:h-16{height:4rem}.lg\:max-w-7xl{max-width:80rem}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:flex-col{flex-direction:column}.lg\:items-end{align-items:flex-end}.lg\:justify-center{justify-content:center}.lg\:gap-8{gap:2rem}.lg\:p-10{padding:2.5rem}.lg\:pb-10{padding-bottom:2.5rem}.lg\:pt-0{padding-top:0px}.lg\:text-\[\#FF2D20\]{--tw-text-opacity:1;color:rgb(255 45 32 / var(--tw-text-opacity))}}@media (prefers-color-scheme: dark){.dark\:block{display:block}.dark\:hidden{display:none}.dark\:bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity))}.dark\:bg-zinc-900{--tw-bg-opacity:1;background-color:rgb(24 24 27 / var(--tw-bg-opacity))}.dark\:via-zinc-900{--tw-gradient-to:rgb(24 24 27 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #18181b var(--tw-gradient-via-position), var(--tw-gradient-to)}.dark\:to-zinc-900{--tw-gradient-to:#18181b var(--tw-gradient-to-position)}.dark\:text-white\/50{color:rgb(255 255 255 / 0.5)}.dark\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:text-white\/70{color:rgb(255 255 255 / 0.7)}.dark\:ring-zinc-800{--tw-ring-opacity:1;--tw-ring-color:rgb(39 39 42 / var(--tw-ring-opacity))}.dark\:hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:hover\:text-white\/70:hover{color:rgb(255 255 255 / 0.7)}.dark\:hover\:text-white\/80:hover{color:rgb(255 255 255 / 0.8)}.dark\:hover\:ring-zinc-700:hover{--tw-ring-opacity:1;--tw-ring-color:rgb(63 63 70 / var(--tw-ring-opacity))}.dark\:focus-visible\:ring-\[\#FF2D20\]:focus-visible{--tw-ring-opacity:1;--tw-ring-color:rgb(255 45 32 / var(--tw-ring-opacity))}.dark\:focus-visible\:ring-white:focus-visible{--tw-ring-opacity:1;--tw-ring-color:rgb(255 255 255 / var(--tw-ring-opacity))}}
-        </style>
-    </head>
-    <body class="font-sans antialiased dark:bg-black dark:text-white/50">
-        <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
-            <img id="background" class="absolute -left-20 top-0 max-w-[877px]" src="https://laravel.com/assets/img/welcome/background.svg" />
-            <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
-                <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl">
-                    <header class="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
-                        <div class="flex lg:justify-center lg:col-start-2">
-                            <svg class="h-12 w-auto text-white lg:h-16 lg:text-[#FF2D20]" viewBox="0 0 62 65" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M61.8548 14.6253C61.8778 14.7102 61.8895 14.7978 61.8897 14.8858V28.5615C61.8898 28.737 61.8434 28.9095 61.7554 29.0614C61.6675 29.2132 61.5409 29.3392 61.3887 29.4265L49.9104 36.0351V49.1337C49.9104 49.4902 49.7209 49.8192 49.4118 49.9987L25.4519 63.7916C25.3971 63.8227 25.3372 63.8427 25.2774 63.8639C25.255 63.8714 25.2338 63.8851 25.2101 63.8913C25.0426 63.9354 24.8666 63.9354 24.6991 63.8913C24.6716 63.8838 24.6467 63.8689 24.6205 63.8589C24.5657 63.8389 24.5084 63.8215 24.456 63.7916L0.501061 49.9987C0.348882 49.9113 0.222437 49.7853 0.134469 49.6334C0.0465019 49.4816 0.000120578 49.3092 0 49.1337L0 8.10652C0 8.01678 0.0124642 7.92953 0.0348998 7.84477C0.0423783 7.8161 0.0598282 7.78993 0.0697995 7.76126C0.0884958 7.70891 0.105946 7.65531 0.133367 7.6067C0.152063 7.5743 0.179485 7.54812 0.20192 7.51821C0.230588 7.47832 0.256763 7.43719 0.290416 7.40229C0.319084 7.37362 0.356476 7.35243 0.388883 7.32751C0.425029 7.29759 0.457436 7.26518 0.498568 7.2415L12.4779 0.345059C12.6296 0.257786 12.8015 0.211853 12.9765 0.211853C13.1515 0.211853 13.3234 0.257786 13.475 0.345059L25.4531 7.2415H25.4556C25.4955 7.26643 25.5292 7.29759 25.5653 7.32626C25.5977 7.35119 25.6339 7.37362 25.6625 7.40104C25.6974 7.43719 25.7224 7.47832 25.7523 7.51821C25.7735 7.54812 25.8021 7.5743 25.8196 7.6067C25.8483 7.65656 25.8645 7.70891 25.8844 7.76126C25.8944 7.78993 25.9118 7.8161 25.9193 7.84602C25.9423 7.93096 25.954 8.01853 25.9542 8.10652V33.7317L35.9355 27.9844V14.8846C35.9355 14.7973 35.948 14.7088 35.9704 14.6253C35.9792 14.5954 35.9954 14.5692 36.0053 14.5405C36.0253 14.4882 36.0427 14.4346 36.0702 14.386C36.0888 14.3536 36.1163 14.3274 36.1375 14.2975C36.1674 14.2576 36.1923 14.2165 36.2272 14.1816C36.2559 14.1529 36.292 14.1317 36.3244 14.1068C36.3618 14.0769 36.3942 14.0445 36.4341 14.0208L48.4147 7.12434C48.5663 7.03694 48.7383 6.99094 48.9133 6.99094C49.0883 6.99094 49.2602 7.03694 49.4118 7.12434L61.3899 14.0208C61.4323 14.0457 61.4647 14.0769 61.5021 14.1055C61.5333 14.1305 61.5694 14.1529 61.5981 14.1803C61.633 14.2165 61.6579 14.2576 61.6878 14.2975C61.7103 14.3274 61.7377 14.3536 61.7551 14.386C61.7838 14.4346 61.8 14.4882 61.8199 14.5405C61.8312 14.5692 61.8474 14.5954 61.8548 14.6253ZM59.893 27.9844V16.6121L55.7013 19.0252L49.9104 22.3593V33.7317L59.8942 27.9844H59.893ZM47.9149 48.5566V37.1768L42.2187 40.4299L25.953 49.7133V61.2003L47.9149 48.5566ZM1.99677 9.83281V48.5566L23.9562 61.199V49.7145L12.4841 43.2219L12.4804 43.2194L12.4754 43.2169C12.4368 43.1945 12.4044 43.1621 12.3682 43.1347C12.3371 43.1097 12.3009 43.0898 12.2735 43.0624L12.271 43.0586C12.2386 43.0275 12.2162 42.9888 12.1887 42.9539C12.1638 42.9203 12.1339 42.8916 12.114 42.8567L12.1127 42.853C12.0903 42.8156 12.0766 42.7707 12.0604 42.7283C12.0442 42.6909 12.023 42.656 12.013 42.6161C12.0005 42.5688 11.998 42.5177 11.9931 42.4691C11.9881 42.4317 11.9781 42.3943 11.9781 42.3569V15.5801L6.18848 12.2446L1.99677 9.83281ZM12.9777 2.36177L2.99764 8.10652L12.9752 13.8513L22.9541 8.10527L12.9752 2.36177H12.9777ZM18.1678 38.2138L23.9574 34.8809V9.83281L19.7657 12.2459L13.9749 15.5801V40.6281L18.1678 38.2138ZM48.9133 9.14105L38.9344 14.8858L48.9133 20.6305L58.8909 14.8846L48.9133 9.14105ZM47.9149 22.3593L42.124 19.0252L37.9323 16.6121V27.9844L43.7219 31.3174L47.9149 33.7317V22.3593ZM24.9533 47.987L39.59 39.631L46.9065 35.4555L36.9352 29.7145L25.4544 36.3242L14.9907 42.3482L24.9533 47.987Z" fill="currentColor"/></svg>
+<head>
+<script>
+
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Medi Connect Africa </title>
+
+
+    <link rel='stylesheet' href="{{asset('theme/plugins/goodlayers-core/plugins/fontawesome/font-awesome.css')}}" type='text/css' media='all'>
+    <link rel='stylesheet' href="{{asset('theme/plugins/goodlayers-core/plugins/fa5/fa5.css')}}" type='text/css' media='all'>
+    <link rel='stylesheet' href="{{asset('theme/plugins/goodlayers-core/plugins/elegant/elegant-font.css')}}" type='text/css' media='all'>
+    <link rel='stylesheet' href="{{asset('theme/plugins/goodlayers-core/plugins/ionicons/ionicons.css')}}" type='text/css' media='all'>
+    <link rel='stylesheet' href="{{asset('theme/plugins/goodlayers-core/plugins/simpleline/simpleline.css')}}" type='text/css' media='all'>
+    <link rel='stylesheet' href="{{asset('theme/plugins/goodlayers-core/plugins/style.css')}}" type='text/css' media='all'>
+    <link rel='stylesheet' href="{{asset('theme/plugins/goodlayers-core/include/css/page-builder.css')}}" type='text/css' media='all'>
+    <link rel='stylesheet' href="{{asset('theme/plugins/revslider/public/assets/css/rs6.css')}}" type='text/css' media='all'>
+    <link rel='stylesheet' href="{{asset('theme/plugins/google-map-plugin/assets/css/frontend.css')}}" type='text/css' media='all'>
+    <link rel='stylesheet' href="{{asset('theme/css/style-core.css')}}" type='text/css' media='all'>
+    <link rel='stylesheet' href="{{asset('theme/css/mediz-style-custom.css')}}" type='text/css' media='all'>
+
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMerriweather%3A300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&subset=latin-ext%2Cdevanagari%2Clatin%2Cvietnamese%2Ccyrillic%2Ccyrillic-ext&display=optional&ver=5.3.2' type='text/css' media='all'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" property="stylesheet" media="all" type="text/css">
+
+</head>
+
+<body class="home page-template-default page page-id-7684 theme-mediz gdlr-core-body woocommerce-no-js mediz-body mediz-body-front mephpdiz-full  mediz-with-sticky-navigation  mediz-sticky-navigation-no-logo  mediz-blockquote-style-1 gdlr-core-link-to-lightbox" data-home-url="index.html">
+    <div class="mediz-mobile-header-wrap">
+        <div class="mediz-mobile-header mediz-header-background mediz-style-slide mediz-sticky-mobile-navigation " id="mediz-mobile-header">
+            <div class="mediz-mobile-header-container mediz-container clearfix">
+                <div class="mediz-logo  mediz-item-pdlr">
+                    <div class="mediz-logo-inner">
+                        <a class="" href="index.html"><img src="{{asset('theme/upload/logo-1.png')}}" alt="" width="290" height="76" title="logo"></a>
+                    </div>
+                </div>
+                <div class="mediz-mobile-menu-right">
+                    <div class="mediz-main-menu-search" id="mediz-mobile-top-search"><i class="fa fa-search"></i></div>
+                    <div class="mediz-top-search-wrap">
+                        <div class="mediz-top-search-close"></div>
+
+                        <div class="mediz-top-search-row">
+                            <div class="mediz-top-search-cell">
+                                <form role="search" method="get" class="search-form" action="index.html">
+                                    <input type="text" class="search-field mediz-title-font" placeholder="Search..." value="" name="s">
+                                    <div class="mediz-top-search-submit"><i class="fa fa-search"></i></div>
+                                    <input type="submit" class="search-submit" value="Search">
+                                    <div class="mediz-top-search-close"><i class="icon_close"></i></div>
+                                </form>
+                            </div>
                         </div>
-                        @if (Route::has('login'))
-                            <nav class="-mx-3 flex flex-1 justify-end">
-                                @auth
-                                    <a
-                                        href="{{ url('/dashboard') }}"
-                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                    >
-                                        Dashboard
-                                    </a>
-                                @else
-                                    <a
-                                        href="{{ route('login') }}"
-                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                    >
-                                        Log in
-                                    </a>
 
-                                    @if (Route::has('register'))
-                                        <a
-                                            href="{{ route('register') }}"
-                                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                        >
-                                            Register
-                                        </a>
-                                    @endif
-                                @endauth
-                            </nav>
-                        @endif
-                    </header>
+                    </div>
 
-                    <main class="mt-6">
-                        <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
-                            <a
-                                href="https://laravel.com/docs"
-                                id="docs-card"
-                                class="flex flex-col items-start gap-6 overflow-hidden rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] md:row-span-3 lg:p-10 lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
-                            >
-                                <div id="screenshot-container" class="relative flex w-full flex-1 items-stretch">
-                                    <img
-                                        src="https://laravel.com/assets/img/welcome/docs-light.svg"
-                                        alt="Laravel documentation screenshot"
-                                        class="aspect-video h-full w-full flex-1 rounded-[10px] object-top object-cover drop-shadow-[0px_4px_34px_rgba(0,0,0,0.06)] dark:hidden"
-                                        onerror="
-                                            document.getElementById('screenshot-container').classList.add('!hidden');
-                                            document.getElementById('docs-card').classList.add('!row-span-1');
-                                            document.getElementById('docs-card-content').classList.add('!flex-row');
-                                            document.getElementById('background').classList.add('!hidden');
-                                        "
-                                    />
-                                    <img
-                                        src="https://laravel.com/assets/img/welcome/docs-dark.svg"
-                                        alt="Laravel documentation screenshot"
-                                        class="hidden aspect-video h-full w-full flex-1 rounded-[10px] object-top object-cover drop-shadow-[0px_4px_34px_rgba(0,0,0,0.25)] dark:block"
-                                    />
-                                    <div
-                                        class="absolute -bottom-16 -left-16 h-40 w-[calc(100%+8rem)] bg-gradient-to-b from-transparent via-white to-white dark:via-zinc-900 dark:to-zinc-900"
-                                    ></div>
-                                </div>
-
-                                <div class="relative flex items-center gap-6 lg:items-end">
-                                    <div id="docs-card-content" class="flex items-start gap-6 lg:flex-col">
-                                        <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16">
-                                            <svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="#FF2D20" d="M23 4a1 1 0 0 0-1.447-.894L12.224 7.77a.5.5 0 0 1-.448 0L2.447 3.106A1 1 0 0 0 1 4v13.382a1.99 1.99 0 0 0 1.105 1.79l9.448 4.728c.14.065.293.1.447.1.154-.005.306-.04.447-.105l9.453-4.724a1.99 1.99 0 0 0 1.1-1.789V4ZM3 6.023a.25.25 0 0 1 .362-.223l7.5 3.75a.251.251 0 0 1 .138.223v11.2a.25.25 0 0 1-.362.224l-7.5-3.75a.25.25 0 0 1-.138-.22V6.023Zm18 11.2a.25.25 0 0 1-.138.224l-7.5 3.75a.249.249 0 0 1-.329-.099.249.249 0 0 1-.033-.12V9.772a.251.251 0 0 1 .138-.224l7.5-3.75a.25.25 0 0 1 .362.224v11.2Z"/><path fill="#FF2D20" d="m3.55 1.893 8 4.048a1.008 1.008 0 0 0 .9 0l8-4.048a1 1 0 0 0-.9-1.785l-7.322 3.706a.506.506 0 0 1-.452 0L4.454.108a1 1 0 0 0-.9 1.785H3.55Z"/></svg>
-                                        </div>
-
-                                        <div class="pt-3 sm:pt-5 lg:pt-0">
-                                            <h2 class="text-xl font-semibold text-black dark:text-white">Documentation</h2>
-
-                                            <p class="mt-4 text-sm/relaxed">
-                                                Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <svg class="size-6 shrink-0 stroke-[#FF2D20]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
-                                </div>
-                            </a>
-
-                            <a
-                                href="https://laracasts.com"
-                                class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
-                            >
-                                <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16">
-                                    <svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g fill="#FF2D20"><path d="M24 8.25a.5.5 0 0 0-.5-.5H.5a.5.5 0 0 0-.5.5v12a2.5 2.5 0 0 0 2.5 2.5h19a2.5 2.5 0 0 0 2.5-2.5v-12Zm-7.765 5.868a1.221 1.221 0 0 1 0 2.264l-6.626 2.776A1.153 1.153 0 0 1 8 18.123v-5.746a1.151 1.151 0 0 1 1.609-1.035l6.626 2.776ZM19.564 1.677a.25.25 0 0 0-.177-.427H15.6a.106.106 0 0 0-.072.03l-4.54 4.543a.25.25 0 0 0 .177.427h3.783c.027 0 .054-.01.073-.03l4.543-4.543ZM22.071 1.318a.047.047 0 0 0-.045.013l-4.492 4.492a.249.249 0 0 0 .038.385.25.25 0 0 0 .14.042h5.784a.5.5 0 0 0 .5-.5v-2a2.5 2.5 0 0 0-1.925-2.432ZM13.014 1.677a.25.25 0 0 0-.178-.427H9.101a.106.106 0 0 0-.073.03l-4.54 4.543a.25.25 0 0 0 .177.427H8.4a.106.106 0 0 0 .073-.03l4.54-4.543ZM6.513 1.677a.25.25 0 0 0-.177-.427H2.5A2.5 2.5 0 0 0 0 3.75v2a.5.5 0 0 0 .5.5h1.4a.106.106 0 0 0 .073-.03l4.54-4.543Z"/></g></svg>
-                                </div>
-
-                                <div class="pt-3 sm:pt-5">
-                                    <h2 class="text-xl font-semibold text-black dark:text-white">Laracasts</h2>
-
-                                    <p class="mt-4 text-sm/relaxed">
-                                        Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                    </p>
-                                </div>
-
-                                <svg class="size-6 shrink-0 self-center stroke-[#FF2D20]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
-                            </a>
-
-                            <a
-                                href="https://laravel-news.com"
-                                class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
-                            >
-                                <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16">
-                                    <svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g fill="#FF2D20"><path d="M8.75 4.5H5.5c-.69 0-1.25.56-1.25 1.25v4.75c0 .69.56 1.25 1.25 1.25h3.25c.69 0 1.25-.56 1.25-1.25V5.75c0-.69-.56-1.25-1.25-1.25Z"/><path d="M24 10a3 3 0 0 0-3-3h-2V2.5a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2V20a3.5 3.5 0 0 0 3.5 3.5h17A3.5 3.5 0 0 0 24 20V10ZM3.5 21.5A1.5 1.5 0 0 1 2 20V3a.5.5 0 0 1 .5-.5h14a.5.5 0 0 1 .5.5v17c0 .295.037.588.11.874a.5.5 0 0 1-.484.625L3.5 21.5ZM22 20a1.5 1.5 0 1 1-3 0V9.5a.5.5 0 0 1 .5-.5H21a1 1 0 0 1 1 1v10Z"/><path d="M12.751 6.047h2a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-.75.75h-2A.75.75 0 0 1 12 7.3v-.5a.75.75 0 0 1 .751-.753ZM12.751 10.047h2a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-.75.75h-2A.75.75 0 0 1 12 11.3v-.5a.75.75 0 0 1 .751-.753ZM4.751 14.047h10a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-.75.75h-10A.75.75 0 0 1 4 15.3v-.5a.75.75 0 0 1 .751-.753ZM4.75 18.047h7.5a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-.75.75h-7.5A.75.75 0 0 1 4 19.3v-.5a.75.75 0 0 1 .75-.753Z"/></g></svg>
-                                </div>
-
-                                <div class="pt-3 sm:pt-5">
-                                    <h2 class="text-xl font-semibold text-black dark:text-white">Laravel News</h2>
-
-                                    <p class="mt-4 text-sm/relaxed">
-                                        Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                    </p>
-                                </div>
-
-                                <svg class="size-6 shrink-0 self-center stroke-[#FF2D20]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
-                            </a>
-
-                            <div class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]">
-                                <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16">
-                                    <svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                        <g fill="#FF2D20">
-                                            <path
-                                                d="M16.597 12.635a.247.247 0 0 0-.08-.237 2.234 2.234 0 0 1-.769-1.68c.001-.195.03-.39.084-.578a.25.25 0 0 0-.09-.267 8.8 8.8 0 0 0-4.826-1.66.25.25 0 0 0-.268.181 2.5 2.5 0 0 1-2.4 1.824.045.045 0 0 0-.045.037 12.255 12.255 0 0 0-.093 3.86.251.251 0 0 0 .208.214c2.22.366 4.367 1.08 6.362 2.118a.252.252 0 0 0 .32-.079 10.09 10.09 0 0 0 1.597-3.733ZM13.616 17.968a.25.25 0 0 0-.063-.407A19.697 19.697 0 0 0 8.91 15.98a.25.25 0 0 0-.287.325c.151.455.334.898.548 1.328.437.827.981 1.594 1.619 2.28a.249.249 0 0 0 .32.044 29.13 29.13 0 0 0 2.506-1.99ZM6.303 14.105a.25.25 0 0 0 .265-.274 13.048 13.048 0 0 1 .205-4.045.062.062 0 0 0-.022-.07 2.5 2.5 0 0 1-.777-.982.25.25 0 0 0-.271-.149 11 11 0 0 0-5.6 2.815.255.255 0 0 0-.075.163c-.008.135-.02.27-.02.406.002.8.084 1.598.246 2.381a.25.25 0 0 0 .303.193 19.924 19.924 0 0 1 5.746-.438ZM9.228 20.914a.25.25 0 0 0 .1-.393 11.53 11.53 0 0 1-1.5-2.22 12.238 12.238 0 0 1-.91-2.465.248.248 0 0 0-.22-.187 18.876 18.876 0 0 0-5.69.33.249.249 0 0 0-.179.336c.838 2.142 2.272 4 4.132 5.353a.254.254 0 0 0 .15.048c1.41-.01 2.807-.282 4.117-.802ZM18.93 12.957l-.005-.008a.25.25 0 0 0-.268-.082 2.21 2.21 0 0 1-.41.081.25.25 0 0 0-.217.2c-.582 2.66-2.127 5.35-5.75 7.843a.248.248 0 0 0-.09.299.25.25 0 0 0 .065.091 28.703 28.703 0 0 0 2.662 2.12.246.246 0 0 0 .209.037c2.579-.701 4.85-2.242 6.456-4.378a.25.25 0 0 0 .048-.189 13.51 13.51 0 0 0-2.7-6.014ZM5.702 7.058a.254.254 0 0 0 .2-.165A2.488 2.488 0 0 1 7.98 5.245a.093.093 0 0 0 .078-.062 19.734 19.734 0 0 1 3.055-4.74.25.25 0 0 0-.21-.41 12.009 12.009 0 0 0-10.4 8.558.25.25 0 0 0 .373.281 12.912 12.912 0 0 1 4.826-1.814ZM10.773 22.052a.25.25 0 0 0-.28-.046c-.758.356-1.55.635-2.365.833a.25.25 0 0 0-.022.48c1.252.43 2.568.65 3.893.65.1 0 .2 0 .3-.008a.25.25 0 0 0 .147-.444c-.526-.424-1.1-.917-1.673-1.465ZM18.744 8.436a.249.249 0 0 0 .15.228 2.246 2.246 0 0 1 1.352 2.054c0 .337-.08.67-.23.972a.25.25 0 0 0 .042.28l.007.009a15.016 15.016 0 0 1 2.52 4.6.25.25 0 0 0 .37.132.25.25 0 0 0 .096-.114c.623-1.464.944-3.039.945-4.63a12.005 12.005 0 0 0-5.78-10.258.25.25 0 0 0-.373.274c.547 2.109.85 4.274.901 6.453ZM9.61 5.38a.25.25 0 0 0 .08.31c.34.24.616.561.8.935a.25.25 0 0 0 .3.127.631.631 0 0 1 .206-.034c2.054.078 4.036.772 5.69 1.991a.251.251 0 0 0 .267.024c.046-.024.093-.047.141-.067a.25.25 0 0 0 .151-.23A29.98 29.98 0 0 0 15.957.764a.25.25 0 0 0-.16-.164 11.924 11.924 0 0 0-2.21-.518.252.252 0 0 0-.215.076A22.456 22.456 0 0 0 9.61 5.38Z"
-                                            />
-                                        </g>
-                                    </svg>
-                                </div>
-
-                                <div class="pt-3 sm:pt-5">
-                                    <h2 class="text-xl font-semibold text-black dark:text-white">Vibrant Ecosystem</h2>
-
-                                    <p class="mt-4 text-sm/relaxed">
-                                        Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white dark:focus-visible:ring-[#FF2D20]">Forge</a>, <a href="https://vapor.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Vapor</a>, <a href="https://nova.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Nova</a>, <a href="https://envoyer.io" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Envoyer</a>, and <a href="https://herd.laravel.com" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Herd</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Echo</a>, <a href="https://laravel.com/docs/horizon" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="rounded-sm underline hover:text-black focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF2D20] dark:hover:text-white">Telescope</a>, and more.
-                                    </p>
+                    <div class="mediz-overlay-menu mediz-mobile-menu" id="mediz-mobile-menu"><a class="mediz-overlay-menu-icon mediz-mobile-menu-button mediz-mobile-button-hamburger" href="#"><span></span></a>
+                        <div class="mediz-overlay-menu-content mediz-navigation-font">
+                            <div class="mediz-overlay-menu-close"></div>
+                            <div class="mediz-overlay-menu-row">
+                                <div class="mediz-overlay-menu-cell">
+                                    <ul id="menu-main-navigation" class="menu">
+                                        <li class="menu-item menu-item-home current-menu-item page_item page-item-7684 current_page_item"><a href="index.html" aria-current="page">Home</a></li>
+                                        <li class="menu-item menu-item-has-children"><a href="about-us.html">About Us</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="about-us.html">About Us</a></li>
+                                                <li class="menu-item"><a href="about-us-2.html">About Us 2</a></li>
+                                                <li class="menu-item"><a href="our-services.html">Our Services</a></li>
+                                                <li class="menu-item"><a href="our-services-2.html">Our Services 2</a></li>
+                                                <li class="menu-item"><a href="our-services-3.html">Our Services 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="our-services.html">Our Services</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="#">Menu Item</a></li>
+                                                <li class="menu-item menu-item-has-children"><a href="#">Our Services</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="lung-diseases.html">Lung Diseases</a></li>
+                                                        <li class="menu-item"><a href="heart.html">Heart Diseases</a></li>
+                                                        <li class="menu-item"><a href="orthopaedic.html">Orthopaedic</a></li>
+                                                        <li class="menu-item"><a href="general-surgery.html">General Surgery</a></li>
+                                                        <li class="menu-item"><a href="eye-care.html">Eye Care</a></li>
+                                                        <li class="menu-item"><a href="dental-service.html">Dental Service</a></li>
+                                                        <li class="menu-item"><a href="sport-injury.html">Sport Injury</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children"><a href="#">Sub Services</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="lumbar-discectomy.html">Lumbar Discectomy</a></li>
+                                                        <li class="menu-item"><a href="endoscopy.html">Endoscopy</a></li>
+                                                        <li class="menu-item"><a href="knee-arthroscopy-2.html">Elbow Arthroscopy</a></li>
+                                                        <li class="menu-item"><a href="colorectal.html">Colorectal</a></li>
+                                                        <li class="menu-item"><a href="knee-arthroscopy.html">Knee Arthroscopy</a></li>
+                                                        <li class="menu-item"><a href="hemorrhoids.html">Hemorrhoids</a></li>
+                                                        <li class="menu-item"><a href="cardio-oncology.html">Cardio Oncology</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children"><a href="#">Service Listing Style</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="our-services.html">Our Services</a></li>
+                                                        <li class="menu-item"><a href="our-services-2.html">Our Services 2</a></li>
+                                                        <li class="menu-item"><a href="our-services-3.html">Our Services 3</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children "><a href="our-doctor.html">Our Doctor</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="our-doctor.html">Our Doctor</a></li>
+                                                <li class="menu-item"><a href="our-doctor-2.html">Our Doctor 2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="#">Pages</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                                <li class="menu-item"><a href="team-plain-style.html">Team / Plain Style</a></li>
+                                                <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+                                                <li class="menu-item"><a href="price-table.html">Price Table</a></li>
+                                                <li class="menu-item"><a href="maintenance.html">Maintenance</a></li>
+                                                <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
+                                                <li class="menu-item"><a href="404.html">404 Page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="portfolio-3-columns.html">Portfolio</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-has-children"><a>Portfolio Grid</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="portfolio-2-columns.html">Portfolio 2 Columns</a></li>
+                                                        <li class="menu-item"><a href="portfolio-3-columns.html">Portfolio 3 Columns</a></li>
+                                                        <li class="menu-item"><a href="portfolio-4-columns.html">Portfolio 4 Columns</a></li>
+                                                        <li class="menu-item"><a href="portfolio-2-columns-with-frame.html">Portfolio 2 Columns With Frame</a></li>
+                                                        <li class="menu-item"><a href="portfolio-3-columns-with-frame.html">Portfolio 3 Columns With Frame</a></li>
+                                                        <li class="menu-item"><a href="portfolio-4-columns-with-frame.html">Portfolio 4 Columns With Frame</a></li>
+                                                        <li class="menu-item"><a href="portfolio-2-columns-no-space.html">Portfolio 2 Columns No Space</a></li>
+                                                        <li class="menu-item"><a href="portfolio-3-columns-no-space.html">Portfolio 3 Columns No Space</a></li>
+                                                        <li class="menu-item"><a href="portfolio-4-columns-no-space.html">Portfolio 4 Columns No Space</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children"><a>Portfolio Side Thumbnail</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="portfolio-left-right-large-thumbnail.html">Portfolio Left &#038; Right Large Thumbnail</a></li>
+                                                        <li class="menu-item"><a href="portfolio-left-large-thumbnail.html">Portfolio Left Large Thumbnail</a></li>
+                                                        <li class="menu-item"><a href="portfolio-right-large-thumbnail.html">Portfolio Right Large Thumbnail</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children "><a href="blog-full-right-sidebar.html">Blog</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-has-children"><a href="blog-full-right-sidebar-with-frame.html">Blog Full</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="blog-full-right-sidebar.html">Blog Full Right Sidebar</a></li>
+                                                        <li class="menu-item"><a href="blog-full-left-sidebar.html">Blog Full Left Sidebar</a></li>
+                                                        <li class="menu-item"><a href="blog-full-both-sidebar.html">Blog Full Both Sidebar</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children"><a href="blog-3-columns-with-frame.html">Blog Columns</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="blog-2-columns-with-frame.html">Blog 2 Columns With Frame</a></li>
+                                                        <li class="menu-item"><a href="blog-3-columns-with-frame.html">Blog 3 Columns With Frame</a></li>
+                                                        <li class="menu-item"><a href="blog-4-columns-with-frame.html">Blog 4 Columns With Frame</a></li>
+                                                        <li class="menu-item"><a href="blog-2-columns.html">Blog 2 Columns</a></li>
+                                                        <li class="menu-item"><a href="blog-3-columns.html">Blog 3 Columns</a></li>
+                                                        <li class="menu-item"><a href="blog-4-columns.html">Blog 4 Columns</a></li>
+                                                        <li class="menu-item"><a href="blog-3-columns-with-frame-post-format.html">Blog Columns With Post Format</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a href="standard-post-type.html">Single Posts</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </main>
-
-                    <footer class="py-16 text-center text-sm text-black dark:text-white/70">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </footer>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+    <div class="mediz-body-outer-wrapper ">
+        <div class="mediz-body-wrapper clearfix  mediz-with-frame">
+            <div class="mediz-top-bar">
+                <div class="mediz-top-bar-background"></div>
+                <div class="mediz-top-bar-container mediz-container ">
+                    <div class="mediz-top-bar-container-inner clearfix">
+                        <div class="mediz-top-bar-left mediz-item-pdlr"><i class="icon-clock" style="font-size: 18px ;color: #17449E ;margin-right: 10px ;"></i>Mon - Sun 0900 - 2100
+                            <i class="icon-phone" style="font-size: 19px ;color: #17449E ;margin-left: 25px ;margin-right: 10px ;"></i>+1-2345-3455-33<i class="icon-envelope" style="font-size: 19px ;color: #17449E ;margin-left: 25px ;margin-right: 10px ;"></i><a href="#"><span class="__cf_email__">test@gmail.com</span></a> </div>
+                        <div class="mediz-top-bar-right mediz-item-pdlr">
+                            <div class="mediz-top-bar-right-social"><a href="#" target="_blank" class="mediz-top-bar-social-icon" title="facebook"><i class="fa fa-facebook"></i></a>
+                            	<a href="#" target="_blank" class="mediz-top-bar-social-icon" title="linkedin"><i class="fa fa-linkedin"></i></a>
+                            	<a href="#" target="_blank" class="mediz-top-bar-social-icon" title="pinterest"><i class="fa fa-pinterest-p"></i></a>
+                            	<a href="#" target="_blank" class="mediz-top-bar-social-icon" title="twitter"><i class="fa fa-twitter"></i></a>
+                            	<a href="#" target="_blank" class="mediz-top-bar-social-icon" title="instagram"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header class="mediz-header-wrap mediz-header-style-bar mediz-header-background  mediz-style-left">
+                <div class="mediz-header-container clearfix  mediz-container">
+                    <div class="mediz-header-container-inner">
+                        <div class="mediz-logo  mediz-item-pdlr">
+                            <div class="mediz-logo-inner">
+                                <a class="" href="index.html"><img src="{{asset('theme/upload/logo-1.png')}}" alt="" width="290" height="76" title="logo"></a>
+                            </div>
+                        </div>
+                        <div class="mediz-logo-right-text mediz-item-pdlr clearfix">
+                            <div class="mediz-logo-right-text-wrap"><i class="mediz-logo-right-text-icon icon-check"></i>
+                                <div class="mediz-logo-right-text-content-wrap">
+                                    <div class="mediz-logo-right-text-title">Trusted By</div>
+                                    <div class="mediz-logo-right-text-caption">120,000+ People</div>
+                                </div>
+                            </div>
+                            <div class="mediz-logo-right-text-wrap"><i class="mediz-logo-right-text-icon icon-check"></i>
+                                <div class="mediz-logo-right-text-content-wrap">
+                                    <div class="mediz-logo-right-text-title">Best Hospital</div>
+                                    <div class="mediz-logo-right-text-caption">U.K. News</div>
+                                </div>
+                            </div>
+                            <div class="mediz-logo-right-text-wrap"><i class="mediz-logo-right-text-icon icon-check"></i>
+                                <div class="mediz-logo-right-text-content-wrap">
+                                    <div class="mediz-logo-right-text-title">Number #1</div>
+                                    <div class="mediz-logo-right-text-caption">Clinic in London</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- header -->
+            <div class="mediz-navigation-bar-wrap  mediz-style-solid mediz-sticky-navigation mediz-sticky-navigation-height mediz-style-left  mediz-style-fixed">
+                <div class="mediz-navigation-background"></div>
+                <div class="mediz-navigation-container clearfix  mediz-container">
+                    <div class="mediz-navigation mediz-item-pdlr clearfix ">
+                        <div class="mediz-main-menu" id="mediz-main-menu">
+                            <ul id="menu-main-navigation-1" class="sf-menu">
+                                <li class="menu-item menu-item-home current-menu-item page_item page-item-7684 current_page_item mediz-normal-menu"><a href="index.html">Home</a></li>
+                                <li class="menu-item menu-item-has-children mediz-normal-menu"><a href="about-us.html" class="sf-with-ul-pre">About Us</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item" data-size="60"><a href="about-us.html">About Us</a></li>
+                                        <li class="menu-item" data-size="60"><a href="about-us-2.html">About Us 2</a></li>
+                                        <li class="menu-item" data-size="60"><a href="our-services.html">Our Services</a></li>
+                                        <li class="menu-item" data-size="60"><a href="our-services-2.html">Our Services 2</a></li>
+                                        <li class="menu-item" data-size="60"><a href="our-services-3.html">Our Services 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children mediz-mega-menu"><a href="index.html" class="sf-with-ul-pre">Our Services</a>
+                                    <div class="sf-mega sf-mega-full" style=" background-image: url('{{asset('theme/upload/mega-nav-bg.jpg')}}');  background-position: top left;  background-repeat: no-repeat; ">
+                                        <ul class="sub-menu">
+                                            <li class="menu-item" data-size="15">
+                                                <div class="mediz-mega-menu-section-content"><span class="gdlr-core-space-shortcode" style="margin-top: 140px ;"></span>
+                                                    <div style="display: block; margin-left: 15px;">
+                                                        <img src="{{asset('theme/upload/mega-nav-logo.png')}}" width="98" alt=""><span class="gdlr-core-space-shortcode" style="margin-top: 10px ;"></span>
+                                                        <span style="font-size: 14px;">One of the first major discov eries relevant to the field of pulmo nology was the disco very </span></div>
+                                                </div>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children" data-size="15"><a href="#" class="sf-with-ul-pre">Our Services</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item"><a href="lung-diseases.html">Lung Diseases</a></li>
+                                                    <li class="menu-item"><a href="heart.html">Heart Diseases</a></li>
+                                                    <li class="menu-item"><a href="orthopaedic.html">Orthopaedic</a></li>
+                                                    <li class="menu-item"><a href="general-surgery.html">General Surgery</a></li>
+                                                    <li class="menu-item"><a href="eye-care.html">Eye Care</a></li>
+                                                    <li class="menu-item"><a href="dental-service.html">Dental Service</a></li>
+                                                    <li class="menu-item"><a href="sport-injury.html">Sport Injury</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children" data-size="15"><a href="#" class="sf-with-ul-pre">Sub Services</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item"><a href="lumbar-discectomy.html">Lumbar Discectomy</a></li>
+                                                    <li class="menu-item"><a href="endoscopy.html">Endoscopy</a></li>
+                                                    <li class="menu-item"><a href="knee-arthroscopy-2.html">Elbow Arthroscopy</a></li>
+                                                    <li class="menu-item"><a href="colorectal.html">Colorectal</a></li>
+                                                    <li class="menu-item"><a href="knee-arthroscopy.html">Knee Arthroscopy</a></li>
+                                                    <li class="menu-item"><a href="hemorrhoids.html">Hemorrhoids</a></li>
+                                                    <li class="menu-item"><a href="cardio-oncology.html">Cardio Oncology</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children" data-size="15"><a href="#" class="sf-with-ul-pre">Service Listing Style</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item"><a href="our-services.html">Our Services</a></li>
+                                                    <li class="menu-item"><a href="our-services-2.html">Our Services 2</a></li>
+                                                    <li class="menu-item"><a href="our-services-3.html">Our Services 3</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-item menu-item-has-children  mediz-normal-menu"><a href="our-doctor.html" class="sf-with-ul-pre">Our Doctor</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item" data-size="60"><a href="our-doctor.html">Our Doctor</a></li>
+                                        <li class="menu-item" data-size="60"><a href="our-doctor-2.html">Our Doctor 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children mediz-normal-menu"><a href="#" class="sf-with-ul-pre">Pages</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item" data-size="60"><a href="contact.html">Contact</a></li>
+                                        <li class="menu-item" data-size="60"><a href="team-plain-style.html">Team</a></li>
+                                        <li class="menu-item" data-size="60"><a href="gallery.html">Gallery</a></li>
+                                        <li class="menu-item" data-size="60"><a href="price-table.html">Price Table</a></li>
+                                        <li class="menu-item" data-size="60"><a href="maintenance.html">Maintenance</a></li>
+                                        <li class="menu-item" data-size="60"><a href="coming-soon.html">Coming Soon</a></li>
+                                        <li class="menu-item" data-size="60"><a href="404.html">404 Page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children mediz-normal-menu"><a href="portfolio-3-columns.html" class="sf-with-ul-pre">Portfolio</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children" data-size="60"><a class="sf-with-ul-pre">Portfolio Grid</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="portfolio-2-columns.html">Portfolio 2 Columns</a></li>
+                                                <li class="menu-item"><a href="portfolio-3-columns.html">Portfolio 3 Columns</a></li>
+                                                <li class="menu-item"><a href="portfolio-4-columns.html">Portfolio 4 Columns</a></li>
+                                                <li class="menu-item"><a href="portfolio-2-columns-with-frame.html">Portfolio 2 Columns With Frame</a></li>
+                                                <li class="menu-item"><a href="portfolio-3-columns-with-frame.html">Portfolio 3 Columns With Frame</a></li>
+                                                <li class="menu-item"><a href="portfolio-4-columns-with-frame.html">Portfolio 4 Columns With Frame</a></li>
+                                                <li class="menu-item"><a href="portfolio-2-columns-no-space.html">Portfolio 2 Columns No Space</a></li>
+                                                <li class="menu-item"><a href="portfolio-3-columns-no-space.html">Portfolio 3 Columns No Space</a></li>
+                                                <li class="menu-item"><a href="portfolio-4-columns-no-space.html">Portfolio 4 Columns No Space</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children" data-size="60"><a class="sf-with-ul-pre">Portfolio Side Thumbnail</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="portfolio-left-right-large-thumbnail.html">Portfolio Left &#038; Right Large Thumbnail</a></li>
+                                                <li class="menu-item"><a href="portfolio-left-large-thumbnail.html">Portfolio Left Large Thumbnail</a></li>
+                                                <li class="menu-item"><a href="portfolio-right-large-thumbnail.html">Portfolio Right Large Thumbnail</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children  mediz-normal-menu"><a href="blog-full-right-sidebar.html" class="sf-with-ul-pre">Blog</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children" data-size="60"><a href="blog-full-right-sidebar-with-frame.html" class="sf-with-ul-pre">Blog Full</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="blog-full-right-sidebar-with-frame.html">Blog Full Right Sidebar With Frame</a></li>
+                                                <li class="menu-item"><a href="blog-full-left-sidebar-with-frame.html">Blog Full Left Sidebar With Frame</a></li>
+                                                <li class="menu-item"><a href="blog-full-both-sidebar-with-frame.html">Blog Full Both Sidebar With Frame</a></li>
+                                                <li class="menu-item"><a href="blog-full-right-sidebar.html">Blog Full Right Sidebar</a></li>
+                                                <li class="menu-item"><a href="blog-full-left-sidebar.html">Blog Full Left Sidebar</a></li>
+                                                <li class="menu-item"><a href="blog-full-both-sidebar.html">Blog Full Both Sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children" data-size="60"><a href="blog-3-columns-with-frame.html" class="sf-with-ul-pre">Blog Columns</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="blog-2-columns-with-frame.html">Blog 2 Columns With Frame</a></li>
+                                                <li class="menu-item"><a href="blog-3-columns-with-frame.html">Blog 3 Columns With Frame</a></li>
+                                                <li class="menu-item"><a href="blog-4-columns-with-frame.html">Blog 4 Columns With Frame</a></li>
+                                                <li class="menu-item"><a href="blog-2-columns.html">Blog 2 Columns</a></li>
+                                                <li class="menu-item"><a href="blog-3-columns.html">Blog 3 Columns</a></li>
+                                                <li class="menu-item"><a href="blog-4-columns.html">Blog 4 Columns</a></li>
+                                                <li class="menu-item"><a href="blog-3-columns-with-frame-post-format.html">Blog Columns With Post Format</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item" data-size="60"><a href="standard-post-type.html">Single Posts</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="mediz-navigation-slide-bar  mediz-navigation-slide-bar-style-2" data-size-offset="0" id="mediz-navigation-slide-bar"></div>
+                        </div>
+                        <div class="mediz-main-menu-right-wrap clearfix ">
+                            <div class="mediz-main-menu-search" id="mediz-top-search"><i class="icon-magnifier"></i></div>
+                            <div class="mediz-top-search-wrap">
+                                <div class="mediz-top-search-close"></div>
+
+                                <div class="mediz-top-search-row">
+                                    <div class="mediz-top-search-cell">
+                                        <form role="search" method="get" class="search-form" action="index.html">
+                                            <input type="text" class="search-field mediz-title-font" placeholder="Search..." value="" name="s">
+                                            <div class="mediz-top-search-submit"><i class="fa fa-search"></i></div>
+                                            <input type="submit" class="search-submit" value="Search">
+                                            <div class="mediz-top-search-close"><i class="icon_close"></i></div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+							<a class="mediz-main-menu-right-button mediz-button-1 mediz-style-round" href="#" target="_self">Contact Now</a>
+						</div>
+                    </div>
+                    <!-- mediz-navigation -->
+
+                </div>
+                <!-- mediz-header-container -->
+            </div>
+            <!-- mediz-navigation-bar-wrap -->
+            <div class="mediz-page-wrapper" id="mediz-page-wrapper">
+                <div class="gdlr-core-page-builder-body">
+                    <div class="gdlr-core-pbf-wrapper " style="padding: 0px 0px 0px 0px;">
+                        <div class="gdlr-core-pbf-background-wrap" style="background-color: #17449e ;"></div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-pbf-wrapper-full-no-space">
+                                <div class="gdlr-core-pbf-element">
+                                    <div class="gdlr-core-revolution-slider-item gdlr-core-item-pdlr gdlr-core-item-pdb " style="padding-bottom: 0px ;">
+                                        <!-- START Home Hospital REVOLUTION SLIDER 6.1.5 -->
+                                        <p class="rs-p-wp-fix"></p>
+                                        <rs-module-wrap id="rev_slider_2_1_wrapper" data-source="gallery" style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+                                            <rs-module id="rev_slider_2_1" style="display:none;" data-version="6.1.5">
+                                                <rs-slides>
+                                                    <rs-slide data-key="rs-3" data-title="Slide" data-thumb="#" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
+                                                        <img src="{{asset('theme/upload/slider-hospital-1-1-2.jpg')}}" title="slider-hospital-1-1" width="1800" height="900" class="rev-slidebg" data-no-retina="">
+                                                        <!---->
+                                                        <rs-layer id="slider-2-slide-3-layer-3" data-type="text" data-rsp_ch="on" data-xy="xo:15px,15px,15px,47px;yo:162px,162px,162px,107px;" data-text="w:normal;s:125,125,125,61;l:125,125,125,46;fw:600;a:left,left,left,center;" data-frame_1="st:250;sR:250;" data-frame_999="o:0;st:w;sR:8450;" style="z-index:11;font-family:Poppins;">Mediz
+                                                        </rs-layer>
+                                                        <!-- -->
+                                                        <rs-layer id="slider-2-slide-3-layer-5" data-type="text" data-rsp_ch="on" data-xy="xo:22px,22px,22px,50px;yo:359px,359px,359px,211px;" data-text="w:normal;s:17;l:28;fw:300;" data-dim="w:548px,548px,548px,377px;h:84px,84px,84px,auto;" data-frame_1="st:770;sR:770;" data-frame_999="o:0;st:w;sR:7930;" style="z-index:13;font-family:Poppins;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                                            <br>
+                                                        </rs-layer>
+                                                        <!-- -->
+                                                        <rs-layer id="slider-2-slide-3-layer-6" data-type="text" data-color="#bbd1ff" data-rsp_ch="on" data-xy="xo:21px,21px,21px,50px;yo:297px,297px,297px,162px;" data-text="w:normal;s:34,34,34,24;l:34;fw:300;a:left,left,left,center;" data-frame_1="st:510;sR:510;" data-frame_999="o:0;st:w;sR:8190;" style="z-index:12;font-family:Poppins;">Medical Center in London
+                                                        </rs-layer>
+                                                        <!-- -->
+                                                        <rs-layer id="slider-2-slide-3-layer-8" class="rev-btn" data-type="button" data-rsp_ch="on" data-xy="xo:23px,23px,23px,50px;yo:447px,447px,447px,319px;" data-text="w:normal;s:13;l:13;ls:1px;fw:700;" data-dim="minh:0px,0px,0px,none;" data-padding="t:20,20,20,17;r:30,30,30,25;b:23,23,23,20;l:30,30,30,25;" data-border="bor:36px,36px,36px,36px;" data-frame_1="st:1050;sR:1050;" data-frame_999="o:0;st:w;sR:7650;" data-frame_hover="c:#d8eaff;bgc:#fff;bor:36px,36px,36px,36px;" style="z-index:15;background:linear-gradient(90deg, rgba(20,65,156,1) 0%, rgba(45,105,196,1) 100%);font-family:Poppins;text-transform:uppercase;">Contact Now
+                                                        </rs-layer>
+                                                        <!-- -->
+                                                        <rs-layer id="slider-2-slide-3-layer-9" data-type="shape" data-rsp_ch="on" data-xy="xo:225px,225px,225px,83px;yo:472px,472px,472px,176px;" data-text="w:normal;s:20,20,20,7;l:0,0,0,9;" data-dim="w:99px,99px,99px,37px;h:2px,2px,2px,1px;" data-vbility="t,t,t,f" data-frame_1="st:1350;sR:1350;" data-frame_999="o:0;st:w;sR:7350;" style="z-index:16;background-color:#ffffff;">
+                                                        </rs-layer>
+                                                        <!-- -->
+                                                    </rs-slide>
+                                                    <rs-slide data-key="rs-5" data-title="Slide" data-thumb="#" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
+                                                        <img src="{{asset('theme/upload/slider-hospital-2-1-n.jpg')}}" title="slider-hospital-2-1-n" width="1800" height="900" class="rev-slidebg" data-no-retina="">
+                                                        <!---->
+                                                        <rs-layer id="slider-2-slide-5-layer-3" data-type="text" data-rsp_ch="on" data-xy="x:l,l,l,c;xo:607px,607px,607px,0;yo:164px,164px,164px,109px;" data-text="w:normal;s:71,71,71,41;l:125,125,125,46;fw:700;a:left,left,left,center;" data-frame_1="st:250;sR:250;" data-frame_999="o:0;st:w;sR:8450;" style="z-index:11;font-family:Poppins;">100,000+ Patients
+                                                        </rs-layer>
+                                                        <!-- -->
+                                                        <rs-layer id="slider-2-slide-5-layer-5" data-type="text" data-rsp_ch="on" data-xy="x:l,l,l,c;xo:614px,614px,614px,0;yo:348px,348px,348px,215px;" data-text="w:normal;s:17;l:28;fw:300;a:left,left,left,center;" data-dim="w:548px,548px,548px,358px;h:84px,84px,84px,auto;" data-frame_1="st:770;sR:770;" data-frame_999="o:0;st:w;sR:7930;" style="z-index:13;font-family:Poppins;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                                            <br>
+                                                        </rs-layer>
+                                                        <!-- -->
+                                                        <rs-layer id="slider-2-slide-5-layer-6" data-type="text" data-color="#bbd1ff" data-rsp_ch="on" data-xy="x:l,l,l,c;xo:613px,613px,613px,0;yo:281px,281px,281px,162px;" data-text="w:normal;s:34,34,34,23;l:34;fw:300;a:left,left,left,center;" data-frame_1="st:510;sR:510;" data-frame_999="o:0;st:w;sR:8190;" style="z-index:12;font-family:Poppins;">Trust in our hospital
+                                                        </rs-layer>
+                                                        <!-- -->
+                                                        <rs-layer id="slider-2-slide-5-layer-8" class="rev-btn" data-type="button" data-rsp_ch="on" data-xy="x:l,l,l,c;xo:613px,613px,613px,0;yo:438px,438px,438px,327px;" data-text="w:normal;s:13;l:13;ls:1px;fw:700;" data-dim="minh:0px,0px,0px,none;" data-padding="t:20,20,20,17;r:30,30,30,25;b:23,23,23,20;l:30,30,30,25;" data-border="bor:36px,36px,36px,36px;" data-frame_1="st:1050;sR:1050;" data-frame_999="o:0;st:w;sR:7650;" data-frame_hover="c:#d8eaff;bgc:#fff;bor:36px,36px,36px,36px;" style="z-index:15;background:linear-gradient(90deg, rgba(20,65,156,1) 0%, rgba(45,105,196,1) 100%);font-family:Poppins;text-transform:uppercase;">Contact Now
+                                                        </rs-layer>
+                                                        <!-- -->
+                                                        <rs-layer id="slider-2-slide-5-layer-9" data-type="shape" data-rsp_ch="on" data-xy="xo:807px,807px,807px,302px;yo:465px,465px,465px,173px;" data-text="w:normal;s:20,20,20,7;l:0,0,0,9;" data-dim="w:99px,99px,99px,37px;h:2px,2px,2px,1px;" data-vbility="t,t,t,f" data-frame_1="st:1350;sR:1350;" data-frame_999="o:0;st:w;sR:7350;" style="z-index:16;background-color:#ffffff;">
+                                                        </rs-layer>
+                                                        <!-- -->
+                                                    </rs-slide>
+                                                </rs-slides>
+                                                <rs-progress class="rs-bottom" style="visibility: hidden !important;"></rs-progress>
+                                            </rs-module>
+
+                                        </rs-module-wrap>
+                                        <!-- END REVOLUTION SLIDER -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gdlr-core-pbf-wrapper " style="margin-top: -63px;margin-right: auto;margin-left: auto;padding: 50px 0px 50px 0px;z-index: 9 ;max-width: 1240px ;border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;" id="gdlr-core-wrapper-1">
+                        <div class="gdlr-core-pbf-background-wrap" style="border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;background-color: #17449e ;background: linear-gradient(to right, rgba(23, 68, 158, 1), rgba(46, 103, 189, 1));-moz-background: linear-gradient(to right, rgba(23, 68, 158, 1), rgba(46, 103, 189, 1));-o-background: linear-gradient(to right, rgba(23, 68, 158, 1), rgba(46, 103, 189, 1));-webkit-background: linear-gradient(to right, rgba(23, 68, 158, 1), rgba(46, 103, 189, 1));">
+                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-size: cover ;background-position: center ;" data-parallax-speed="0"></div>
+                        </div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                                <div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first" id="gdlr-core-column-83795">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 10px 0px 0px 10px;" data-sync-height="Height Mediz Top BG">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 25px ;">
+                                                    <div class="gdlr-core-title-item-left-image gdlr-core-media-image" style="margin-top: -4px;margin-right: 15px;margin-left: 0px;"><img src="{{asset('theme/upload/Top-icon1.png')}}" alt="" width="42" height="32" title="Top-icon1"></div>
+                                                    <div class="gdlr-core-title-item-left-image-wrap">
+                                                        <div class="gdlr-core-title-item-title-wrap ">
+                                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 22px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;color: #ffffff ;">Emergency Service<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align gdlr-core-no-p-space" style="padding-bottom: 25px ;">
+                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px ;font-weight: 400 ;letter-spacing: 0px ;text-transform: none ;color: #abcbff ;">
+                                                        <p>An emergency department (ED), also known as an accident &amp; emergency department (A&amp;E), emergency room (ER), emergency ward (EW) or casualty department, is a medical treatment.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 0px ;">
+                                                    <div class="gdlr-core-title-item-title-wrap ">
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 21px ;font-weight: 500 ;letter-spacing: 0px ;text-transform: none ;color: #ffffff ;">Call : +1-2345-3455-33<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-30" id="gdlr-core-column-98899">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 10px 20px 0px 0px;" data-sync-height="Height Mediz Top BG">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 25px ;">
+                                                    <div class="gdlr-core-title-item-left-image gdlr-core-media-image" style="margin: -2px 12px 0px 0px;"><img src="{{asset('theme/upload/Top-icon2.png')}}" alt="" width="26" height="27" title="Top-icon2"></div>
+                                                    <div class="gdlr-core-title-item-left-image-wrap">
+                                                        <div class="gdlr-core-title-item-title-wrap ">
+                                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 22px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;color: #ffffff ;">Opening hours<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align gdlr-core-no-p-space" style="padding-bottom: 15px ;">
+                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px ;font-weight: 400 ;letter-spacing: 0px ;text-transform: none ;color: #abcbff ;">
+                                                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-opening-hour-item gdlr-core-item-pdlr gdlr-core-item-pdb  gdlr-core-divider-style-solid" style="padding-bottom: 0px ;">
+                                                    <div class="gdlr-core-opening-hour-list">
+                                                        <div class="gdlr-core-opening-hour-list-item" style="border-color: #5a7ec6 ;"><span class="gdlr-core-opening-hour-day" style="color: #ffffff ;">Mon - Fri</span><span class="gdlr-core-opening-hour-time gdlr-core-opening-hour-open" style="color: #ffffff ;">08:00 - 21:00</span></div>
+                                                        <div class="gdlr-core-opening-hour-list-item" style="border-color: #5a7ec6 ;"><span class="gdlr-core-opening-hour-day" style="color: #ffffff ;">Sat - Sun</span><span class="gdlr-core-opening-hour-time gdlr-core-opening-hour-open" style="color: #ffffff ;">08:00 - 19:00</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-wrapper " style="padding: 70px 0px 40px 0px;" data-skin="Mediz HP Column SVC">
+                        <div class="gdlr-core-pbf-background-wrap"></div>
+                        <div class="gdlr-core-pbf-background-wrap" style="top: 70px ;">
+                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('theme/upload/bg-Our-svc.jpg')}}') ;background-repeat: no-repeat ;background-position: top center ;" data-parallax-speed="0"></div>
+                        </div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                                <div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first" id="gdlr-core-column-92705">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding-right: 0px;padding-bottom: 55px;padding-left: 0px;">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 0px ;">
+                                                    <div class="gdlr-core-title-item-title-wrap ">
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 36px ;font-weight: 700 ;text-transform: none ;color: #1c4ca5 ;">Our Services<span class="gdlr-core-title-item-title-side-border gdlr-core-style-lower" style="border-bottom-width: 4px ;border-color: #d8d8d8 ;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;width: 44px ;margin-left: 15px ;"></span><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20 gdlr-core-column-first" id="gdlr-core-column-1822">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px 0px 0px 0px;padding-right: 20px;padding-bottom: 20px;">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-top gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 30px;margin: 0px 0px 0px 0px;">
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 3px;"><img src="{{asset('theme/upload/icon-1.png')}}" alt="" width="57" height="49" title="icon-1"></div>
+                                                    <div class="gdlr-core-column-service-content-wrapper">
+                                                        <div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 20px ;">
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 20px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">Lung Diseases</h3></div>
+                                                        <div class="gdlr-core-column-service-content" style="font-weight: 400 ;text-transform: none ;">
+                                                            <p>One of the key classifications is between traditio nal small molecule drugs; usually derived from chemical synthesis.</p>
+                                                            <a class="gdlr-core-column-service-read-more gdlr-core-info-font" href="#" target="_self" style="font-size: 16px ;font-weight: 500 ;font-style: normal ;">Learn More<i class="arrow_right" style="font-size: 23px ;"></i></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20" id="gdlr-core-column-55419">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px 0px 0px 0px;padding: 0px 20px 20px 0px;">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-top gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 30px;margin: 0px 0px 0px 0px;">
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 11px;"><img src="{{asset('theme/upload/icon-2.png')}}" alt="" width="46" height="41" title="icon-2"></div>
+                                                    <div class="gdlr-core-column-service-content-wrapper">
+                                                        <div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 20px ;">
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 20px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">Heart Diseases</h3></div>
+                                                        <div class="gdlr-core-column-service-content" style="font-weight: 400 ;text-transform: none ;">
+                                                            <p>One of the key classifications is between traditio nal small molecule drugs; usually derived from chemical synthesis.</p>
+                                                            <a class="gdlr-core-column-service-read-more gdlr-core-info-font" href="#" target="_self" style="font-size: 16px ;font-weight: 500 ;font-style: normal ;">Learn More<i class="arrow_right" style="font-size: 23px ;"></i></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20" id="gdlr-core-column-67381">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px 0px 0px 0px;padding: 0px 20px 20px 0px;">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-top gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 30px;margin: 0px 0px 0px 0px;">
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 6px;"><img src="{{asset('theme/upload/icon-3.png')}}" alt="" width="45" height="46" title="icon-3"></div>
+                                                    <div class="gdlr-core-column-service-content-wrapper">
+                                                        <div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 20px ;">
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 20px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">Orthopaedic</h3></div>
+                                                        <div class="gdlr-core-column-service-content" style="font-weight: 400 ;text-transform: none ;">
+                                                            <p>One of the key classifications is between traditio nal small molecule drugs; usually derived from chemical synthesis.</p>
+                                                            <a class="gdlr-core-column-service-read-more gdlr-core-info-font" href="#" target="_self" style="font-size: 16px ;font-weight: 500 ;font-style: normal ;">Learn More<i class="arrow_right" style="font-size: 23px ;"></i></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20 gdlr-core-column-first" id="gdlr-core-column-46663">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px 0px 0px 0px;padding-right: 20px;padding-bottom: 20px;">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-top gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 30px;margin: 0px 0px 0px 0px;">
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 5px;"><img src="{{asset('theme/upload/Column-icon-4.png')}}" alt="" width="44" height="42" title="Column-icon-4"></div>
+                                                    <div class="gdlr-core-column-service-content-wrapper">
+                                                        <div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 20px ;">
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 20px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">General Surgery</h3></div>
+                                                        <div class="gdlr-core-column-service-content" style="font-weight: 400 ;text-transform: none ;">
+                                                            <p>One of the key classifications is between traditio nal small molecule drugs; usually derived from chemical synthesis.</p>
+                                                            <a class="gdlr-core-column-service-read-more gdlr-core-info-font" href="#" target="_self" style="font-size: 16px ;font-weight: 500 ;font-style: normal ;">Learn More<i class="arrow_right" style="font-size: 23px ;"></i></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20" id="gdlr-core-column-72260">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px 0px 0px 0px;padding: 0px 20px 20px 0px;">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-top gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 30px;margin: 0px 0px 0px 0px;">
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 3px;"><img src="{{asset('theme/upload/Column-icon5.png')}}" alt="" width="42" height="44" title="Column-icon5"></div>
+                                                    <div class="gdlr-core-column-service-content-wrapper">
+                                                        <div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 20px ;">
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 20px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">Pharmacy</h3></div>
+                                                        <div class="gdlr-core-column-service-content" style="font-weight: 400 ;text-transform: none ;">
+                                                            <p>One of the key classifications is between traditio nal small molecule drugs; usually derived from chemical synthesis.</p>
+                                                            <a class="gdlr-core-column-service-read-more gdlr-core-info-font" href="#" target="_self" style="font-size: 16px ;font-weight: 500 ;font-style: normal ;">Learn More<i class="arrow_right" style="font-size: 23px ;"></i></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20" id="gdlr-core-column-37165">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px 0px 0px 0px;padding: 0px 20px 20px 0px;">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-top gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 30px;margin: 0px 0px 0px 0px;">
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 0px;"><img src="{{asset('theme/upload/Column-icon6.png')}}" alt="" width="39" height="47" title="Column-icon6"></div>
+                                                    <div class="gdlr-core-column-service-content-wrapper">
+                                                        <div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 20px ;">
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 20px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">Sports Injury</h3></div>
+                                                        <div class="gdlr-core-column-service-content" style="font-weight: 400 ;text-transform: none ;">
+                                                            <p>One of the key classifications is between traditio nal small molecule drugs; usually derived from chemical synthesis.</p>
+                                                            <a class="gdlr-core-column-service-read-more gdlr-core-info-font" href="#" target="_self" style="font-size: 16px ;font-weight: 500 ;font-style: normal ;">Learn More<i class="arrow_right" style="font-size: 23px ;"></i></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-wrapper " style="box-shadow: 0 20px 45px rgba(0, 0, 0,0.27); -moz-box-shadow: 0 20px 45px rgba(0, 0, 0,0.27); -webkit-box-shadow: 0 20px 45px rgba(0, 0, 0,0.27); margin-right: auto;margin-bottom: -80px;margin-left: auto;padding: 70px 0px 80px 0px;z-index: 9 ;max-width: 1240px ;border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;" data-skin="Mediz A2 Counter">
+                        <div class="gdlr-core-pbf-background-wrap" style="border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;">
+                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('theme/upload/counter-bg.png')}}') ;background-size: cover ;background-position: center ;" data-parallax-speed="0"></div>
+                        </div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                                <div class="gdlr-core-pbf-column gdlr-core-column-15 gdlr-core-column-first" id="gdlr-core-column-38136">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js ">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-counter-item gdlr-core-item-pdlr gdlr-core-item-pdb  gdlr-core-center-align" style="padding-bottom: 0px ;">
+                                                    <div class="gdlr-core-counter-item-number gdlr-core-skin-title gdlr-core-title-font" style="font-size: 39px ;font-weight: 700 ;"><span class="gdlr-core-counter-item-count gdlr-core-js" data-duration="" data-counter-start="0" data-counter-end="200">0</span></div>
+                                                    <div class="gdlr-core-counter-item-bottom-text gdlr-core-skin-content" style="font-size: 20px ;font-weight: 500 ;text-transform: none ;">Doctors</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-15" id="gdlr-core-column-86500">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js ">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-counter-item gdlr-core-item-pdlr gdlr-core-item-pdb  gdlr-core-center-align" style="padding-bottom: 0px ;">
+                                                    <div class="gdlr-core-counter-item-number gdlr-core-skin-title gdlr-core-title-font" style="font-size: 39px ;font-weight: 700 ;"><span class="gdlr-core-counter-item-count gdlr-core-js" data-duration="" data-counter-start="0" data-counter-end="29000">0</span><span class="gdlr-core-counter-item-suffix">+</span></div>
+                                                    <div class="gdlr-core-counter-item-bottom-text gdlr-core-skin-content" style="font-size: 20px ;font-weight: 500 ;text-transform: none ;">Happy Patients</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-15" id="gdlr-core-column-93525">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js ">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-counter-item gdlr-core-item-pdlr gdlr-core-item-pdb  gdlr-core-center-align" style="padding-bottom: 0px ;">
+                                                    <div class="gdlr-core-counter-item-number gdlr-core-skin-title gdlr-core-title-font" style="font-size: 39px ;font-weight: 700 ;"><span class="gdlr-core-counter-item-count gdlr-core-js" data-duration="" data-counter-start="0" data-counter-end="1000">0</span></div>
+                                                    <div class="gdlr-core-counter-item-bottom-text gdlr-core-skin-content" style="font-size: 20px ;font-weight: 500 ;text-transform: none ;">Medical Beds</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-15">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js ">
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-counter-item gdlr-core-item-pdlr gdlr-core-item-pdb  gdlr-core-center-align" style="padding-bottom: 0px ;">
+                                                    <div class="gdlr-core-counter-item-number gdlr-core-skin-title gdlr-core-title-font" style="font-size: 39px ;font-weight: 700 ;"><span class="gdlr-core-counter-item-count gdlr-core-js" data-duration="" data-counter-start="0" data-counter-end="150">0</span></div>
+                                                    <div class="gdlr-core-counter-item-bottom-text gdlr-core-skin-content" style="font-size: 20px ;font-weight: 500 ;text-transform: none ;">Winning Awards</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-wrapper " style="padding: 0px 0px 0px 0px;" data-skin="Mediz HP Column SVS MId">
+                        <div class="gdlr-core-pbf-background-wrap" style="background-color: #f5f5f5 ;"></div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                                <div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first" id="gdlr-core-column-28192">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 175px 60px 55px 0px;">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 45px ;">
+                                                    <div class="gdlr-core-title-item-title-wrap ">
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 32px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #353535 ;">Our Expertise<span class="gdlr-core-title-item-title-side-border gdlr-core-style-lower" style="border-bottom-width: 4px ;border-color: #d8d8d8 ;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;width: 44px ;margin-left: 15px ;"></span><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 0px;margin-bottom: 40px;">
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image"><img src="{{asset('theme/upload/mediz-icon1.png')}}" alt="" width="96" height="97" title="mediz-icon1"></div>
+                                                    <div class="gdlr-core-column-service-content-wrapper">
+                                                        <div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 7px ;">
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 19px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">Immune system</h3></div>
+                                                        <div class="gdlr-core-column-service-content" style="font-size: 16px ;font-weight: 400 ;text-transform: none ;">
+                                                            <p class="p1">Drug discovery and drug development are complex and expensive endeavors undertaken</p>
+                                                            <a class="gdlr-core-column-service-read-more gdlr-core-info-font" href="#" target="_self" style="font-size: 16px ;font-weight: 500 ;font-style: normal ;">Learn More<i class="arrow_right" style="font-size: 24px ;"></i></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 0px;margin-bottom: 40px;">
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image"><img src="{{asset('theme/upload/mediz-icon2.png')}}" alt="" width="96" height="97" title="mediz-icon2"></div>
+                                                    <div class="gdlr-core-column-service-content-wrapper">
+                                                        <div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 7px ;">
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 19px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">Antimalarial</h3></div>
+                                                        <div class="gdlr-core-column-service-content" style="font-size: 16px ;font-weight: 400 ;text-transform: none ;">
+                                                            <p class="p1">Drug discovery and drug development are complex and expensive endeavors undertaken</p>
+                                                            <a class="gdlr-core-column-service-read-more gdlr-core-info-font" href="#" target="_self" style="font-size: 16px ;font-weight: 500 ;font-style: normal ;">Learn More<i class="arrow_right" style="font-size: 24px ;"></i></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 0px;margin-bottom: 0px;">
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image"><img src="{{asset('theme/upload/mediz-icon3.png')}}" alt="" width="96" height="97" title="mediz-icon3"></div>
+                                                    <div class="gdlr-core-column-service-content-wrapper">
+                                                        <div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 7px ;">
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 19px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">Nutrition</h3></div>
+                                                        <div class="gdlr-core-column-service-content" style="font-size: 16px ;font-weight: 400 ;text-transform: none ;">
+                                                            <p class="p1">Drug discovery and drug development are complex and expensive endeavors undertaken</p>
+                                                            <a class="gdlr-core-column-service-read-more gdlr-core-info-font" href="#" target="_self" style="font-size: 16px ;font-weight: 500 ;font-style: normal ;">Learn More<i class="arrow_right" style="font-size: 24px ;"></i></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-30" id="gdlr-core-column-25407">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js  gdlr-core-column-extend-right" style="padding: 175px 0px 55px 60px;">
+                                        <div class="gdlr-core-pbf-background-wrap">
+                                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('theme/upload/hp1-contact-form-bg.jpg')}}') ;background-size: cover ;background-position: center ;" data-parallax-speed="0"></div>
+                                        </div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 20px ;">
+                                                    <div class="gdlr-core-title-item-title-wrap ">
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 32px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #ffffff ;">Make an appointment<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align gdlr-core-no-p-space" style="padding-bottom: 40px ;">
+                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 17px ;font-weight: 400 ;letter-spacing: 0px ;text-transform: none ;color: #9ebeff ;">
+                                                        <p>We will send you a confirmation within 24 hours.
+                                                            <br><strong><span style="color: #ffffff;">Emergency?</span></strong> Call 1-2554-2356-33</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-contact-form-7-item gdlr-core-item-pdlr gdlr-core-item-pdb " style="padding-bottom: 0px ;">
+                                                    <div role="form" class="wpcf7" id="wpcf7-f5826-p7684-o1" lang="en-US" dir="ltr">
+                                                        <div class="screen-reader-response"></div>
+                                                        <form action="https://demo.goodlayers.com/mediz/hospital/#wpcf7-f5826-p7684-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                                                            <div style="display: none;">
+                                                                <input type="hidden" name="_wpcf7" value="5826">
+                                                                <input type="hidden" name="_wpcf7_version" value="5.1.6">
+                                                                <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5826-p7684-o1">
+                                                                <input type="hidden" name="_wpcf7_container_post" value="7684">
+                                                            </div>
+                                                            <div class="gdlr-core-input-wrap gdlr-core-large gdlr-core-full-width gdlr-core-with-column gdlr-core-no-border">
+                                                                <div class="gdlr-core-column-30"><span class="wpcf7-form-control-wrap your-name"><input type="email" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Full Name*"></span></div>
+                                                                <div class="gdlr-core-column-30"><span class="wpcf7-form-control-wrap your-phone"><input type="text" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone*"></span></div>
+                                                                <div class="clear"></div>
+                                                                <div class="gdlr-core-column-30"><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email*"></span></div>
+                                                                <div class="gdlr-core-column-30"><span class="wpcf7-form-control-wrap your-department"><select name="your-department" class="wpcf7-form-control wpcf7-select" aria-invalid="false"><option value="Lung Diseases">Lung Diseases</option><option value="Heart Diseases">Heart Diseases</option><option value="Orthopaedic">Orthopaedic</option><option value="General Surgery">General Surgery</option><option value="Pharmacy">Pharmacy</option><option value="Sports Injury">Sports Injury</option><option value="Fever &amp; Flu">Fever &amp; Flu</option><option value="Dental Service">Dental Service</option><option value="Eye Care">Eye Care</option></select></span></div>
+                                                                <div class="clear"></div>
+                                                                <div class="gdlr-core-column-30"><span class="wpcf7-form-control-wrap your-date"><input type="text" name="your-date" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Date"></span></div>
+                                                                <div class="gdlr-core-column-30"><span class="wpcf7-form-control-wrap your-time"><input type="text" name="your-time" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Time"></span></div>
+                                                                <div class="clear"></div>
+                                                                <div class="gdlr-core-column-60"><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message*"></textarea></span></div>
+                                                                <div class="clear"></div>
+                                                                <div class="gdlr-core-column-60 gdlr-core-left-align">
+                                                                    <input type="submit" value="Submit Now" class="wpcf7-form-control wpcf7-submit gdlr-core-full">
+                                                                </div>
+                                                            </div>
+                                                            <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-wrapper " style="padding: 0px 0px 0px 0px;">
+                        <div class="gdlr-core-pbf-background-wrap" style="background-color: #113989 ;"></div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-pbf-wrapper-full-no-space">
+                                <div class="gdlr-core-pbf-element">
+                                    <div class="gdlr-core-tab-feature3-item gdlr-core-tab-action gdlr-core-js gdlr-core-item-pdb  gdlr-core-size-4" style="padding-bottom: 0px ;">
+                                        <div class="gdlr-core-tab-feature3-title-item-wrap clearfix">
+                                            <div class="gdlr-core-tab-feature3-title-wrap gdlr-core-tab-action-title gdlr-core-column-15  gdlr-core-active gdlr-core-js clearfix" data-tab-id="1">
+                                                <div class="gdlr-core-tab-feature3-title-overlay"></div>
+                                                <div class="gdlr-core-tab-feature3-title-sign"></div>
+                                                <div class="gdlr-core-tab-feature3-title-content">
+                                                    <h3 class="gdlr-core-tab-feature3-title">Hospital Introduction</h3>
+                                                    <div class="gdlr-core-tab-feature3-caption">See Video Introduction</div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-tab-feature3-title-wrap gdlr-core-tab-action-title gdlr-core-column-15  gdlr-core-js clearfix" data-tab-id="2">
+                                                <div class="gdlr-core-tab-feature3-title-overlay"></div>
+                                                <div class="gdlr-core-tab-feature3-title-sign"></div>
+                                                <div class="gdlr-core-tab-feature3-title-content">
+                                                    <h3 class="gdlr-core-tab-feature3-title">Why Choose Us</h3>
+                                                    <div class="gdlr-core-tab-feature3-caption">Listen from real patients</div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-tab-feature3-title-wrap gdlr-core-tab-action-title gdlr-core-column-15  gdlr-core-js clearfix" data-tab-id="3">
+                                                <div class="gdlr-core-tab-feature3-title-overlay"></div>
+                                                <div class="gdlr-core-tab-feature3-title-sign"></div>
+                                                <div class="gdlr-core-tab-feature3-title-content">
+                                                    <h3 class="gdlr-core-tab-feature3-title">Our innovation</h3>
+                                                    <div class="gdlr-core-tab-feature3-caption">Our dedicated research team</div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-tab-feature3-title-wrap gdlr-core-tab-action-title gdlr-core-column-15  gdlr-core-js clearfix" data-tab-id="4">
+                                                <div class="gdlr-core-tab-feature3-title-overlay"></div>
+                                                <div class="gdlr-core-tab-feature3-title-sign"></div>
+                                                <div class="gdlr-core-tab-feature3-title-content">
+                                                    <h3 class="gdlr-core-tab-feature3-title">Give Back</h3>
+                                                    <div class="gdlr-core-tab-feature3-caption">Donation programme</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gdlr-core-tab-feature3-item-content-wrap gdlr-core-tab-action-content-wrap clearfix">
+                                            <div class="gdlr-core-tab-feature3-content-wrap  gdlr-core-active" data-tab-id="1" style="background-image: url('{{asset('theme/upload/video-featured-1-1.jpg')}}') ;">
+                                                <div class="gdlr-core-tab-feature3-content-top-overlay" style="background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-moz-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-o-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-webkit-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));"></div>
+                                                <div class="gdlr-core-tab-feature3-content-top-overlay2"></div>
+                                                <div class="gdlr-core-tab-feature3-content-bottom-overlay" style="background: #113989 ;"></div>
+                                                <div class="gdlr-core-container clearfix">
+                                                    <div class="gdlr-core-tab-feature3-top" style="height: 500px ;"><a class="gdlr-core-lightgallery gdlr-core-js gdlr-core-tab-feature3-video-lb" href="https://www.youtube.com/watch?v=KAvQsRL-jeo"><i class="fa fa-play"></i></a>
+                                                        <div class="clear"></div>
+                                                    </div>
+                                                    <div class="gdlr-core-tab-feature3-content-left gdlr-core-item-pdlr">
+                                                        <h3 class="gdlr-core-tab-feature3-content-left-title">About Us<span class="gdlr-core-tab-feature3-content-left-title-divider"></span></h3>
+                                                        <div class="gdlr-core-tab-feature3-content-left-image gdlr-core-media-image"><img src="{{asset('theme/upload/video-featured-1-2.jpg')}}" alt="" width="500" height="276" title="video-featured-1-2"></div>
+                                                    </div>
+                                                    <div class="gdlr-core-tab-feature3-content-right gdlr-core-item-pdlr">Historically, drugs were discovered through identifying the active ingredient from traditional remedies or by serendipitous discovery. Later chemical libraries of synthetic small molecules.
+                                                        <span class="gdlr-core-space-shortcode" style="margin-top: 20px ;"></span>
+                                                        <div style="color: #C4D8FF; font-size: 18px; line-height: 1.7;">
+                                                            Modern drug discovery involves the identification of screening hits, medicinal chemistry and optimization of those hits to increase the affinity, selectivity (to reduce the potential of side effects), efficacy/potency, metabolic stability (to increase the half-life), and oral bioavailability. Once a compound that fulfills all of these requirements.
+                                                        </div>
+                                                        <span class="gdlr-core-space-shortcode" style="margin-top: 35px ;"></span>
+                                                        <a class="gdlr-core-button gdlr-core-button-shortcode  gdlr-core-button-gradient gdlr-core-button-no-border" href="#" target="_blank" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;padding: 12px 24px 15px 30px;text-transform: none ;margin-right: 20px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;background: #4D93E9 ;"><span class="gdlr-core-content">Learn More</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 23px ;"></i></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-tab-feature3-content-wrap " data-tab-id="2" style="background-image: url('{{asset('theme/upload/video-featured-2-1.jpg')}}') ;">
+                                                <div class="gdlr-core-tab-feature3-content-top-overlay" style="background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-moz-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-o-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-webkit-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));"></div>
+                                                <div class="gdlr-core-tab-feature3-content-top-overlay2"></div>
+                                                <div class="gdlr-core-tab-feature3-content-bottom-overlay" style="background: #113989 ;"></div>
+                                                <div class="gdlr-core-container clearfix">
+                                                    <div class="gdlr-core-tab-feature3-top" style="height: 500px ;"><a class="gdlr-core-lightgallery gdlr-core-js gdlr-core-tab-feature3-video-lb" href="https://www.youtube.com/watch?v=KAvQsRL-jeo"><i class="fa fa-play"></i></a>
+                                                        <div class="clear"></div>
+                                                    </div>
+                                                    <div class="gdlr-core-tab-feature3-content-left gdlr-core-item-pdlr">
+                                                        <h3 class="gdlr-core-tab-feature3-content-left-title">Why Us<span class="gdlr-core-tab-feature3-content-left-title-divider"></span></h3>
+                                                        <div class="gdlr-core-tab-feature3-content-left-image gdlr-core-media-image"><img src="{{asset('theme/upload/video-featured-2-2.jpg')}}" alt="" width="500" height="276" title="video-featured-2-2"></div>
+                                                    </div>
+                                                    <div class="gdlr-core-tab-feature3-content-right gdlr-core-item-pdlr">Historically, drugs were discovered through identifying the active ingredient from traditional remedies or by serendipitous discovery. Later chemical libraries of synthetic small molecules.
+                                                        <span class="gdlr-core-space-shortcode" style="margin-top: 20px ;"></span>
+                                                        <div style="color: #C4D8FF; font-size: 18px; line-height: 1.7;">
+                                                            Modern drug discovery involves the identification of screening hits, medicinal chemistry and optimization of those hits to increase the affinity, selectivity (to reduce the potential of side effects), efficacy/potency, metabolic stability (to increase the half-life), and oral bioavailability. Once a compound that fulfills all of these requirements.
+                                                        </div>
+                                                        <span class="gdlr-core-space-shortcode" style="margin-top: 35px ;"></span>
+                                                        <a class="gdlr-core-button gdlr-core-button-shortcode  gdlr-core-button-gradient gdlr-core-button-no-border" href="#" target="_blank" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;padding: 12px 24px 15px 30px;text-transform: none ;margin-right: 20px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;background: #4D93E9 ;"><span class="gdlr-core-content">Learn More</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 23px ;"></i></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-tab-feature3-content-wrap " data-tab-id="3" style="background-image: url('{{asset('theme/upload/video-featured-3-1.jpg')}}') ;">
+                                                <div class="gdlr-core-tab-feature3-content-top-overlay" style="background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-moz-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-o-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-webkit-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));"></div>
+                                                <div class="gdlr-core-tab-feature3-content-top-overlay2"></div>
+                                                <div class="gdlr-core-tab-feature3-content-bottom-overlay" style="background: #113989 ;"></div>
+                                                <div class="gdlr-core-container clearfix">
+                                                    <div class="gdlr-core-tab-feature3-top" style="height: 500px ;"><a class="gdlr-core-lightgallery gdlr-core-js gdlr-core-tab-feature3-video-lb" href="https://www.youtube.com/watch?v=KAvQsRL-jeo"><i class="fa fa-play"></i></a>
+                                                        <div class="clear"></div>
+                                                    </div>
+                                                    <div class="gdlr-core-tab-feature3-content-left gdlr-core-item-pdlr">
+                                                        <h3 class="gdlr-core-tab-feature3-content-left-title">Our innovation<span class="gdlr-core-tab-feature3-content-left-title-divider"></span></h3>
+                                                        <div class="gdlr-core-tab-feature3-content-left-image gdlr-core-media-image"><img src="{{asset('theme/upload/video-featured-3-2-1.jpg')}}" alt="" width="500" height="276" title="video-featured-3-2"></div>
+                                                    </div>
+                                                    <div class="gdlr-core-tab-feature3-content-right gdlr-core-item-pdlr">Historically, drugs were discovered through identifying the active ingredient from traditional remedies or by serendipitous discovery. Later chemical libraries of synthetic small molecules.
+                                                        <span class="gdlr-core-space-shortcode" style="margin-top: 20px ;"></span>
+                                                        <div style="color: #C4D8FF; font-size: 18px; line-height: 1.7;">
+                                                            Modern drug discovery involves the identification of screening hits, medicinal chemistry and optimization of those hits to increase the affinity, selectivity (to reduce the potential of side effects), efficacy/potency, metabolic stability (to increase the half-life), and oral bioavailability. Once a compound that fulfills all of these requirements.
+                                                        </div>
+                                                        <span class="gdlr-core-space-shortcode" style="margin-top: 35px ;"></span>
+                                                        <a class="gdlr-core-button gdlr-core-button-shortcode  gdlr-core-button-gradient gdlr-core-button-no-border" href="#" target="_blank" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;padding: 12px 24px 15px 30px;text-transform: none ;margin-right: 20px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;background: #4D93E9 ;"><span class="gdlr-core-content">Learn More</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 23px ;"></i></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-tab-feature3-content-wrap " data-tab-id="4" style="background-image: url('{{asset('theme/upload/video-featured-4-1.jpg')}}') ;">
+                                                <div class="gdlr-core-tab-feature3-content-top-overlay" style="background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-moz-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-o-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-webkit-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));"></div>
+                                                <div class="gdlr-core-tab-feature3-content-top-overlay2"></div>
+                                                <div class="gdlr-core-tab-feature3-content-bottom-overlay" style="background: #113989 ;"></div>
+                                                <div class="gdlr-core-container clearfix">
+                                                    <div class="gdlr-core-tab-feature3-top" style="height: 500px ;"><a class="gdlr-core-lightgallery gdlr-core-js gdlr-core-tab-feature3-video-lb" href="https://www.youtube.com/watch?v=KAvQsRL-jeo"><i class="fa fa-play"></i></a>
+                                                        <div class="clear"></div>
+                                                    </div>
+                                                    <div class="gdlr-core-tab-feature3-content-left gdlr-core-item-pdlr">
+                                                        <h3 class="gdlr-core-tab-feature3-content-left-title">Give Back<span class="gdlr-core-tab-feature3-content-left-title-divider"></span></h3>
+                                                        <div class="gdlr-core-tab-feature3-content-left-image gdlr-core-media-image"><img src="{{asset('theme/upload/video-featured-4-2.jpg')}}" alt="" width="500" height="276" title="video-featured-4-2"></div>
+                                                    </div>
+                                                    <div class="gdlr-core-tab-feature3-content-right gdlr-core-item-pdlr">Historically, drugs were discovered through identifying the active ingredient from traditional remedies or by serendipitous discovery. Later chemical libraries of synthetic small molecules.
+                                                        <span class="gdlr-core-space-shortcode" style="margin-top: 20px ;"></span>
+                                                        <div style="color: #C4D8FF; font-size: 18px; line-height: 1.7;">
+                                                            Modern drug discovery involves the identification of screening hits, medicinal chemistry and optimization of those hits to increase the affinity, selectivity (to reduce the potential of side effects), efficacy/potency, metabolic stability (to increase the half-life), and oral bioavailability. Once a compound that fulfills all of these requirements.
+                                                        </div>
+                                                        <span class="gdlr-core-space-shortcode" style="margin-top: 35px ;"></span>
+                                                        <a class="gdlr-core-button gdlr-core-button-shortcode  gdlr-core-button-gradient gdlr-core-button-no-border" href="#" target="_blank" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;padding: 12px 24px 15px 30px;text-transform: none ;margin-right: 20px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;background: #4D93E9 ;"><span class="gdlr-core-content">Learn More</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 23px ;"></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-wrapper " style="margin-bottom: -202px;padding: 75px 0px 0px 0px;z-index: 9 ;" data-skin="Personnel">
+                        <div class="gdlr-core-pbf-background-wrap"></div>
+                        <div class="gdlr-core-pbf-background-wrap" style="top: 65px ;">
+                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('theme/upload/our-doctors.jpg')}}') ;background-repeat: no-repeat ;background-position: top center ;" data-parallax-speed="0"></div>
+                        </div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                                <div class="gdlr-core-pbf-column gdlr-core-column-40 gdlr-core-column-first" id="gdlr-core-column-21311">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 0px 0px 33px 0px;">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 0px ;">
+                                                    <div class="gdlr-core-title-item-title-wrap ">
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 36px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #1c4ca5 ;">Our Doctors<span class="gdlr-core-title-item-title-side-border gdlr-core-style-lower" style="border-bottom-width: 4px ;border-color: #d8d8d8 ;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;width: 44px ;margin-left: 15px ;"></span><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20" id="gdlr-core-column-11422">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 40px 0px 0px 0px;">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-right-align" style="padding-bottom: 0px ;"><a class="gdlr-core-button  gdlr-core-button-transparent gdlr-core-right-align gdlr-core-button-no-border" href="#" style="font-size: 16px ;font-weight: 500 ;letter-spacing: 0px ;color: #17449e ;padding: 0px 0px 0px 0px;text-transform: none ;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;"><span class="gdlr-core-content">See All Doctors</span><i class="gdlr-core-pos-right arrow_right" style="font-size: 24px ;color: #17449e ;"></i></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-element">
+                                    <div class="gdlr-core-personnel-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-personnel-item-style-grid-with-background gdlr-core-personnel-style-grid gdlr-core-with-background gdlr-core-item-pdlr" style="padding-bottom: 40px ;">
+                                        <div class="gdlr-core-flexslider flexslider gdlr-core-js-2  gdlr-core-bullet-style-round gdlr-core-color-bullet" data-type="carousel" data-column="3" data-move="1" data-nav="bullet" data-nav-parent="gdlr-core-personnel-item" data-disable-autoslide="1">
+                                            <ul class="slides">
+                                                <li class="gdlr-core-item-mglr">
+                                                    <div class="gdlr-core-personnel-list clearfix gdlr-core-outer-frame-element" style="box-shadow: 0 0 35px rgba(0, 0, 0,0.1); -moz-box-shadow: 0 0 35px rgba(0, 0, 0,0.1); -webkit-box-shadow: 0 0 35px rgba(0, 0, 0,0.1); border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;">
+                                                        <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-hover-element gdlr-core-zoom-on-hover">
+                                                            <a href="#"><img src="{{asset('theme/upload/p-1.1-400x400.jpg')}}" width="600" height="600" alt=""></a>
+                                                            <div class="gdlr-core-hover-opacity"></div>
+                                                        </div>
+                                                        <div class="gdlr-core-personnel-list-content-wrap ">
+                                                            <h3 class="gdlr-core-personnel-list-title" style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;"><a href="#">Joshua Clark</a></h3>
+                                                            <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Anesthesiologist</div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-core-item-mglr">
+                                                    <div class="gdlr-core-personnel-list clearfix gdlr-core-outer-frame-element" style="box-shadow: 0 0 35px rgba(0, 0, 0,0.1); -moz-box-shadow: 0 0 35px rgba(0, 0, 0,0.1); -webkit-box-shadow: 0 0 35px rgba(0, 0, 0,0.1); border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;">
+                                                        <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-hover-element gdlr-core-zoom-on-hover">
+                                                            <a href="#"><img src="{{asset('theme/upload/p-9-400x400.jpg')}}" width="600" height="600" alt=""></a>
+                                                            <div class="gdlr-core-hover-opacity"></div>
+                                                        </div>
+                                                        <div class="gdlr-core-personnel-list-content-wrap ">
+                                                            <h3 class="gdlr-core-personnel-list-title" style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;"><a href="#">Steven Jacob</a></h3>
+                                                            <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Anesthesiologist</div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-core-item-mglr">
+                                                    <div class="gdlr-core-personnel-list clearfix gdlr-core-outer-frame-element" style="box-shadow: 0 0 35px rgba(0, 0, 0,0.1); -moz-box-shadow: 0 0 35px rgba(0, 0, 0,0.1); -webkit-box-shadow: 0 0 35px rgba(0, 0, 0,0.1); border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;">
+                                                        <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-hover-element gdlr-core-zoom-on-hover">
+                                                            <a href="#"><img src="{{asset('theme/upload/p-8-400x400.jpg')}}" width="600" height="600" alt=""></a>
+                                                            <div class="gdlr-core-hover-opacity"></div>
+                                                        </div>
+                                                        <div class="gdlr-core-personnel-list-content-wrap ">
+                                                            <h3 class="gdlr-core-personnel-list-title" style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;"><a href="#">Emma Bunton</a></h3>
+                                                            <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Allergist</div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-core-item-mglr">
+                                                    <div class="gdlr-core-personnel-list clearfix gdlr-core-outer-frame-element" style="box-shadow: 0 0 35px rgba(0, 0, 0,0.1); -moz-box-shadow: 0 0 35px rgba(0, 0, 0,0.1); -webkit-box-shadow: 0 0 35px rgba(0, 0, 0,0.1); border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;">
+                                                        <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-hover-element gdlr-core-zoom-on-hover">
+                                                            <a href="#"><img src="{{asset('theme/upload/p-7-400x400.jpg')}}" width="600" height="600" alt=""></a>
+                                                            <div class="gdlr-core-hover-opacity"></div>
+                                                        </div>
+                                                        <div class="gdlr-core-personnel-list-content-wrap ">
+                                                            <h3 class="gdlr-core-personnel-list-title" style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;"><a href="#">Emily Haden</a></h3>
+                                                            <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Neurosurgeon</div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-core-item-mglr">
+                                                    <div class="gdlr-core-personnel-list clearfix gdlr-core-outer-frame-element" style="box-shadow: 0 0 35px rgba(0, 0, 0,0.1); -moz-box-shadow: 0 0 35px rgba(0, 0, 0,0.1); -webkit-box-shadow: 0 0 35px rgba(0, 0, 0,0.1); border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;">
+                                                        <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-hover-element gdlr-core-zoom-on-hover">
+                                                            <a href="#"><img src="{{asset('theme/upload/p-6-400x400.jpg')}}" width="600" height="600" alt=""></a>
+                                                            <div class="gdlr-core-hover-opacity"></div>
+                                                        </div>
+                                                        <div class="gdlr-core-personnel-list-content-wrap ">
+                                                            <h3 class="gdlr-core-personnel-list-title" style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;"><a href="#">Thomas Paul</a></h3>
+                                                            <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Allergist</div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-core-item-mglr">
+                                                    <div class="gdlr-core-personnel-list clearfix gdlr-core-outer-frame-element" style="box-shadow: 0 0 35px rgba(0, 0, 0,0.1); -moz-box-shadow: 0 0 35px rgba(0, 0, 0,0.1); -webkit-box-shadow: 0 0 35px rgba(0, 0, 0,0.1); border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;">
+                                                        <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-hover-element gdlr-core-zoom-on-hover">
+                                                            <a href="#"><img src="{{asset('theme/upload/p-5-400x400.jpg')}}" width="600" height="600" alt=""></a>
+                                                            <div class="gdlr-core-hover-opacity"></div>
+                                                        </div>
+                                                        <div class="gdlr-core-personnel-list-content-wrap ">
+                                                            <h3 class="gdlr-core-personnel-list-title" style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;"><a href="#">David James</a></h3>
+                                                            <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Anesthesiologist</div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-wrapper " style="padding: 150px 0px 215px 0px;" id="gdlr-core-wrapper-2">
+                        <div class="gdlr-core-pbf-background-wrap" style="background-color: #f5f5f5 ;"></div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                                <div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first" id="gdlr-core-column-65499">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 130px 0px 0px 0px;">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 12px ;">
+                                                    <div class="gdlr-core-title-item-title-wrap ">
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 24px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #1c4ca5 ;">Certificates & Standards<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-center-align" style="margin-bottom: 50px ;">
+                                                    <div class="gdlr-core-divider-container" style="max-width: 44px ;">
+                                                        <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #d8d8d8 ;border-width: 4px;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first" id="gdlr-core-column-9175">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js ">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js " style="max-width: 1200px ;">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-gallery-item gdlr-core-item-pdb clearfix  gdlr-core-gallery-item-style-grid" style="padding-bottom: 0px ;">
+                                                    <div class="gdlr-core-gallery-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
+                                                        <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-column-first gdlr-core-item-pdlr gdlr-core-item-mgb" style="margin-bottom: 10px ;">
+                                                            <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="{{asset('theme/upload/banner-1-2.png')}}" alt="" width="333" height="129" title="banner-1"></div>
+                                                        </div>
+                                                        <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb" style="margin-bottom: 10px ;">
+                                                            <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="{{asset('theme/upload/banner-2.png')}}" alt="" width="333" height="129" title="banner-2"></div>
+                                                        </div>
+                                                        <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb" style="margin-bottom: 10px ;">
+                                                            <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="{{asset('theme/upload/banner-3.png')}}" alt="" width="333" height="129" title="banner-3"></div>
+                                                        </div>
+                                                        <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb" style="margin-bottom: 10px ;">
+                                                            <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="{{asset('theme/upload/banner-4.png')}}" alt="" width="333" height="129" title="banner-4"></div>
+                                                        </div>
+                                                        <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb" style="margin-bottom: 10px ;">
+                                                            <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="{{asset('theme/upload/banner-5.png')}}" alt="" width="333" height="129" title="banner-5"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-wrapper " style="margin: -130px 0px 0px 0px;padding: 0px 0px 0px 0px;" data-skin="Blockqoute">
+                        <div class="gdlr-core-pbf-background-wrap" style="border-radius: 0px 0px 0px 0px;-moz-border-radius: 0px 0px 0px 0px;-webkit-border-radius: 0px 0px 0px 0px;"></div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container-custom" style="max-width: 1240px ;">
+                                <div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first gdlr-core-hide-in-mobile" id="gdlr-core-column-32948" style="z-index: 9 ;">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " data-sync-height="Height Qoute">
+                                        <div class="gdlr-core-pbf-background-wrap" style="border-radius: 5px 0px 0px 0px;-moz-border-radius: 5px 0px 0px 0px;-webkit-border-radius: 5px 0px 0px 0px;">
+                                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('theme/upload/Girl-talk.jpg')}}') ;background-size: cover ;background-position: center ;" data-parallax-speed="0"></div>
+                                        </div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content"></div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-30" id="gdlr-core-column-87465">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="box-shadow: 0 0 35px rgba(0, 0, 0,0.1); -moz-box-shadow: 0 0 35px rgba(0, 0, 0,0.1); -webkit-box-shadow: 0 0 35px rgba(0, 0, 0,0.1); margin-top: 0px;padding: 120px 20px 110px 60px;" data-sync-height="Height Qoute">
+                                        <div class="gdlr-core-pbf-background-wrap" style="background-color: #ffffff ;border-radius: 0px 5px 0px 0px;-moz-border-radius: 0px 5px 0px 0px;-webkit-border-radius: 0px 5px 0px 0px;"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-blockquote-item gdlr-core-item-pdlr gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-medium-size" style="padding-bottom: 0px ;">
+                                                    <div class="gdlr-core-blockquote gdlr-core-info-font">
+                                                        <div class="gdlr-core-blockquote-item-quote gdlr-core-quote-font gdlr-core-skin-icon" style="height: 95px ;font-size: 135px ;font-weight: 800 ;">&#8220;</div>
+                                                        <div class="gdlr-core-blockquote-item-content-wrap">
+                                                            <div class="gdlr-core-blockquote-item-content gdlr-core-skin-content" style="font-size: 18px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">
+                                                                <p>Historically, drugs were discovered through identifying the active ingredient from traditional remedies or by serendipitous discovery. Later chemical libraries of synthetic small molecules.</p>
+                                                            </div>
+                                                            <div class="gdlr-core-blockquote-item-author gdlr-core-skin-caption" style="font-size: 20px ;font-weight: 700 ;font-style: normal ;"><span class="gdlr-core-blockquote-item-author-name">Mildred Payne</span><span class="gdlr-core-blockquote-item-author-position" style="font-size: 15px ;font-weight: 400 ;">Allergist</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-wrapper " style="margin-left: auto;margin-right: auto;padding: 0px 0px 0px 0px;max-width: 1240px ;border-radius: 0px 0px 5px 5px;-moz-border-radius: 0px 0px 5px 5px;-webkit-border-radius: 0px 0px 5px 5px;" id="gdlr-core-wrapper-3">
+                        <div class="gdlr-core-pbf-background-wrap" style="border-radius: 0px 0px 5px 5px;-moz-border-radius: 0px 0px 5px 5px;-webkit-border-radius: 0px 0px 5px 5px;">
+                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('theme/upload/Bg-Title.jpg')}}') ;background-size: cover ;background-position: center ;" data-parallax-speed="0"></div>
+                        </div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                                <div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first" id="gdlr-core-column-40376">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 60px 0px 40px 20px;" data-sync-height="Height title">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 10px ;">
+                                                    <div class="gdlr-core-title-item-title-wrap ">
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 26px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #ffffff ;">Subscribe to our newsletter<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 0px ;">
+                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px ;font-weight: 400 ;letter-spacing: 0px ;text-transform: none ;color: #9ebeff ;">
+                                                        <p>Community Memorial Hospital is the ONLY hospital in the state of New York to achieve One of Healthgrades America’s 100 Best Hospitals for Joint Replacement in 2016.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-30" id="gdlr-core-column-98350">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 90px 20px 50px 50px;">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-newsletter-item gdlr-core-item-pdlr gdlr-core-item-pdb  gdlr-core-style-rectangle" style="padding-bottom: 0px ;">
+
+                                                    <script type="text/javascript">
+                                                        //<![CDATA[
+                                                        if (typeof newsletter_check !== "function") {
+                                                            window.newsletter_check = function(f) {
+                                                                var re = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
+                                                                if (!re.test(f.elements["ne"].value)) {
+                                                                    alert("Email address is not correct");
+                                                                    return false;
+                                                                }
+                                                                for (var i = 1; i < 20; i++) {
+                                                                    if (f.elements["np" + i] && f.elements["np" + i].required && f.elements["np" + i].value == "") {
+                                                                        alert("A mandatory field is not filled in");
+                                                                        return false;
+                                                                    }
+                                                                }
+                                                                if (f.elements["ny"] && !f.elements["ny"].checked) {
+                                                                    alert("You must accept the privacy policy");
+                                                                    return false;
+                                                                }
+                                                                return true;
+                                                            }
+                                                        }
+                                                        //]]>
+                                                    </script>
+
+                                                    <div class="newsletter newsletter-subscription">
+                                                        <form class="gdlr-core-newsletter-form clearfix" method="post" action="https://demo.goodlayers.com/mediz/hospital/?na=s" onsubmit="return newsletter_check(this)">
+                                                            <div class="gdlr-core-newsletter-email">
+                                                                <input class="newsletter-email gdlr-core-skin-e-background gdlr-core-skin-e-content" placeholder="Your Email Address" type="email" name="ne" size="30" required="">
+                                                            </div>
+                                                            <div class="gdlr-core-newsletter-submit">
+                                                                <input class="newsletter-submit" type="submit" value="Subscribe">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-wrapper " style="padding: 90px 0px 70px 0px;">
+                        <div class="gdlr-core-pbf-background-wrap"></div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                                <div class="gdlr-core-pbf-column gdlr-core-column-40 gdlr-core-column-first" data-skin="HP Blog Featured" id="gdlr-core-column-42883">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js ">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-blog-item gdlr-core-item-pdb clearfix  gdlr-core-style-blog-widget" style="padding-bottom: 0px ;">
+                                                    <div class="gdlr-core-block-item-title-wrap  gdlr-core-left-align gdlr-core-item-mglr" style="margin-bottom: 40px ;">
+                                                        <div class="gdlr-core-block-item-title-inner">
+                                                            <h3 class="gdlr-core-block-item-title" style="font-size: 27px ;font-weight: 700 ;text-transform: none ;letter-spacing: 0px ;color: #1c4ca5 ;">Recent News</h3><a class="gdlr-core-block-item-read-more gdlr-core-style-with-border" href="#" target="_self" style="color: #4d93e9 ;border-color: #4d93e9 ;">Read All News</a></div>
+                                                    </div>
+                                                    <div class="gdlr-core-blog-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
+                                                        <div class="gdlr-core-item-list-wrap gdlr-core-featured gdlr-core-column-30">
+                                                            <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix  gdlr-core-style-large gdlr-core-style-2" style="margin-bottom: 17px ;">
+                                                                <div class="gdlr-core-blog-thumbnail gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover" style="border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;">
+                                                                    <a href="#"><img src="{{asset('theme/upload/shutterstock_556980217-600x333.jpg')}}" width="900" height="500" alt=""></a>
+                                                                </div>
+                                                                <div class="gdlr-core-blog-widget-content">
+                                                                    <h3 class="gdlr-core-blog-title gdlr-core-skin-title"><a href="#">Using anthrax to fight cancer effectively</a></h3>
+                                                                    <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider"><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><span class="gdlr-core-blog-info-sep">•</span><span class="gdlr-core-head"><i class="icon_clock_alt"></i></span><a href="#">February 28, 2019</a></span><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-tag"><span class="gdlr-core-blog-info-sep">•</span><span class="gdlr-core-head"><i class="icon_tags_alt"></i></span><a href="#" rel="tag">Antibiotic</a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-core-item-list-wrap gdlr-core-column-30">
+                                                            <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix  gdlr-core-style-large gdlr-core-style-2" style="margin-bottom: 17px ;">
+                                                                <div class="gdlr-core-blog-thumbnail gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover" style="border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;">
+                                                                    <a href="#"><img src="{{asset('theme/upload/pexels-photo-1-150x150.jpg')}}" alt="" width="150" height="150" title="pexels-photo"></a>
+                                                                </div>
+                                                                <div class="gdlr-core-blog-widget-content">
+                                                                    <h3 class="gdlr-core-blog-title gdlr-core-skin-title"><a href="#">These blood markers may indicate a higher risk of disease</a></h3>
+                                                                    <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider"><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><span class="gdlr-core-blog-info-sep">•</span><span class="gdlr-core-head"><i class="icon_clock_alt"></i></span><a href="#">February 28, 2019</a></span><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-tag"><span class="gdlr-core-blog-info-sep">•</span><span class="gdlr-core-head"><i class="icon_tags_alt"></i></span><a href="#" rel="tag">Drugs</a><span class="gdlr-core-sep">,</span> <a href="#" rel="tag">Health Care</a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix  gdlr-core-style-large gdlr-core-style-2" style="margin-bottom: 17px ;">
+                                                                <div class="gdlr-core-blog-thumbnail gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover" style="border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;">
+                                                                    <a href="#"><img src="{{asset('theme/upload/shutterstock_123513331-150x150.jpg')}}" alt="" width="150" height="150" title="shutterstock_123513331"></a>
+                                                                </div>
+                                                                <div class="gdlr-core-blog-widget-content">
+                                                                    <h3 class="gdlr-core-blog-title gdlr-core-skin-title"><a href="#">Brushing your teeth may keep your heart healthy</a></h3>
+                                                                    <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider"><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><span class="gdlr-core-blog-info-sep">•</span><span class="gdlr-core-head"><i class="icon_clock_alt"></i></span><a href="#">February 28, 2019</a></span><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-tag"><span class="gdlr-core-blog-info-sep">•</span><span class="gdlr-core-head"><i class="icon_tags_alt"></i></span><a href="#" rel="tag">Hospital</a><span class="gdlr-core-sep">,</span> <a href="#" rel="tag">Infectious</a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix  gdlr-core-style-large gdlr-core-style-2" style="margin-bottom: 17px ;">
+                                                                <div class="gdlr-core-blog-thumbnail gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover" style="border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;">
+                                                                    <a href="#"><img src="{{asset('theme/upload/shutterstock_547398394-150x150.jpg')}}" alt="" width="150" height="150" title="shutterstock_547398394"></a>
+                                                                </div>
+                                                                <div class="gdlr-core-blog-widget-content">
+                                                                    <h3 class="gdlr-core-blog-title gdlr-core-skin-title"><a href="#">Doctor&#8217;s Failure to Diagnose a Medical Condition</a></h3>
+                                                                    <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider"><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><span class="gdlr-core-blog-info-sep">•</span><span class="gdlr-core-head"><i class="icon_clock_alt"></i></span><a href="#">February 28, 2019</a></span><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-tag"><span class="gdlr-core-blog-info-sep">•</span><span class="gdlr-core-head"><i class="icon_tags_alt"></i></span><a href="#" rel="tag">Infectious</a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20" id="gdlr-core-column-34218">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 0px 0px 0px 30px;">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 20px ;">
+                                                    <div class="gdlr-core-title-item-title-wrap ">
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 25px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #1c4ca5 ;">Quick Links<span class="gdlr-core-title-item-title-side-border gdlr-core-style-lower" style="border-bottom-width: 4px ;border-color: #d8d8d8 ;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;width: 41px ;margin-left: 15px ;"></span><span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-icon-list-item gdlr-core-item-pdlr gdlr-core-item-pdb clearfix gdlr-core-with-divider gdlr-core-left-align" style="padding-bottom: 0px ;">
+                                                    <ul>
+                                                        <li class=" gdlr-core-skin-divider clearfix" style="border-color: #dedede ;padding-bottom: 14px ;padding-top: 14px ;"><a href="#" target="_self"><span class="gdlr-core-icon-list-icon-wrap gdlr-core-right" style="margin-top: 5px ;"><i class="gdlr-core-icon-list-icon fa fa-long-arrow-right" style="color: #4d93e9 ;font-size: 16px ;width: 16px ;"></i></span><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #4d93e9 ;font-size: 16px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">Lumbar Discectomy</span></div></a></li>
+                                                        <li class=" gdlr-core-skin-divider clearfix" style="border-color: #dedede ;padding-bottom: 14px ;padding-top: 14px ;"><a href="#" target="_self"><span class="gdlr-core-icon-list-icon-wrap gdlr-core-right" style="margin-top: 5px ;"><i class="gdlr-core-icon-list-icon fa fa-long-arrow-right" style="color: #4d93e9 ;font-size: 16px ;width: 16px ;"></i></span><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #4d93e9 ;font-size: 16px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">Endoscopy</span></div></a></li>
+                                                        <li class=" gdlr-core-skin-divider clearfix" style="border-color: #dedede ;padding-bottom: 14px ;padding-top: 14px ;"><a href="#" target="_self"><span class="gdlr-core-icon-list-icon-wrap gdlr-core-right" style="margin-top: 5px ;"><i class="gdlr-core-icon-list-icon fa fa-long-arrow-right" style="color: #4d93e9 ;font-size: 16px ;width: 16px ;"></i></span><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #4d93e9 ;font-size: 16px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">Elbow Arthroscopy</span></div></a></li>
+                                                        <li class=" gdlr-core-skin-divider clearfix" style="border-color: #dedede ;padding-bottom: 14px ;padding-top: 14px ;"><a href="#" target="_self"><span class="gdlr-core-icon-list-icon-wrap gdlr-core-right" style="margin-top: 5px ;"><i class="gdlr-core-icon-list-icon fa fa-long-arrow-right" style="color: #4d93e9 ;font-size: 16px ;width: 16px ;"></i></span><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #4d93e9 ;font-size: 16px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">Colorectal</span></div></a></li>
+                                                        <li class=" gdlr-core-skin-divider clearfix" style="border-color: #dedede ;padding-bottom: 14px ;padding-top: 14px ;"><a href="#" target="_self"><span class="gdlr-core-icon-list-icon-wrap gdlr-core-right" style="margin-top: 5px ;"><i class="gdlr-core-icon-list-icon fa fa-long-arrow-right" style="color: #4d93e9 ;font-size: 16px ;width: 16px ;"></i></span><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #4d93e9 ;font-size: 16px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">Knee Arthroscopy</span></div></a></li>
+                                                        <li class=" gdlr-core-skin-divider clearfix" style="border-color: #dedede ;padding-bottom: 14px ;padding-top: 14px ;"><a href="#" target="_self"><span class="gdlr-core-icon-list-icon-wrap gdlr-core-right" style="margin-top: 5px ;"><i class="gdlr-core-icon-list-icon fa fa-long-arrow-right" style="color: #4d93e9 ;font-size: 16px ;width: 16px ;"></i></span><div class="gdlr-core-icon-list-content-wrap"><span class="gdlr-core-icon-list-content" style="color: #4d93e9 ;font-size: 16px ;font-weight: 400 ;text-transform: none ;letter-spacing: 0px ;">Hemorrhoids</span></div></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-wrapper " style="padding: 0px 0px 0px 0px;" data-skin="HP Column SVC Bottom">
+                        <div class="gdlr-core-pbf-background-wrap"></div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-pbf-wrapper-full-no-space">
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20 gdlr-core-column-first" id="gdlr-core-column-82563">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 75px 70px 60px 70px;" data-sync-height="col-features-hp" data-sync-height-center="">
+                                        <div class="gdlr-core-pbf-background-wrap" style="background-color: #113377 ;"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-center-align gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 0px;">
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="max-width: 92px ;margin-left: auto ;margin-right: auto ;"><img src="{{asset('theme/upload/col-feature-1.png')}}" alt="" width="150" height="150" title="col-feature-1"></div>
+                                                    <div class="gdlr-core-column-service-content-wrapper">
+                                                        <div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 15px ;">
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 21px ;padding-top: 10px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">Best Monitoring System</h3></div>
+                                                        <div class="gdlr-core-column-service-content" style="font-size: 16px ;font-weight: 400 ;text-transform: none ;">
+                                                            <p>Despite advances in technology and understanding of biological systems, drug discovery is still a lengthy, expensive.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20" id="gdlr-core-column-16983">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 75px 70px 60px 70px;" data-sync-height="col-features-hp" data-sync-height-center="">
+                                        <div class="gdlr-core-pbf-background-wrap" style="background-color: #113377 ;">
+                                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('theme/upload/Bg-Column.jpg')}}') ;background-size: cover ;background-position: center ;" data-parallax-speed="0"></div>
+                                        </div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-center-align gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 0px;">
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="max-width: 92px ;margin-left: auto ;margin-right: auto ;"><img src="{{asset('theme/upload/col-feature-2.png')}}" alt="" width="150" height="150" title="col-feature-2"></div>
+                                                    <div class="gdlr-core-column-service-content-wrapper">
+                                                        <div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 15px ;">
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 21px ;padding-top: 10px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">Advanced Operating Room</h3></div>
+                                                        <div class="gdlr-core-column-service-content" style="font-size: 16px ;font-weight: 400 ;text-transform: none ;">
+                                                            <p>Despite advances in technology and understanding of biological systems, drug discovery is still a lengthy, expensive.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20" id="gdlr-core-column-63284">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 75px 70px 60px 70px;" data-sync-height="col-features-hp" data-sync-height-center="">
+                                        <div class="gdlr-core-pbf-background-wrap" style="background-color: #17449e ;"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-center-align gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 0px;">
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="max-width: 92px ;margin-left: auto ;margin-right: auto ;"><img src="{{asset('theme/upload/col-feature-3.png')}}" alt="" width="150" height="150" title="col-feature-3"></div>
+                                                    <div class="gdlr-core-column-service-content-wrapper">
+                                                        <div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 15px ;">
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 21px ;padding-top: 10px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;">Only Best Doctors</h3></div>
+                                                        <div class="gdlr-core-column-service-content" style="font-size: 16px ;font-weight: 400 ;text-transform: none ;">
+                                                            <p>Despite advances in technology and understanding of biological systems, drug discovery is still a lengthy, expensive.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-wrapper " style="padding: 105px 0px 80px 0px;" id="gdlr-core-wrapper-4">
+                        <div class="gdlr-core-pbf-background-wrap">
+                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('theme/upload/BG-Testimonial.jpg')}}') ;background-size: cover ;background-position: top center ;" data-parallax-speed="0"></div>
+                        </div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                                <div class="gdlr-core-pbf-element">
+                                    <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr">
+                                        <div class="gdlr-core-title-item-title-wrap ">
+                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 36px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #020202 ;">Testimonial<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first" id="gdlr-core-column-73112">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js ">
+                                        <div class="gdlr-core-pbf-background-wrap"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js " style="max-width: 850px ;">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-testimonial-item gdlr-core-item-pdb clearfix  gdlr-core-testimonial-style-center gdlr-core-item-pdlr">
+                                                    <div class="gdlr-core-flexslider flexslider gdlr-core-js-2 " data-type="carousel" data-column="1" data-move="1" data-nav="navigation-outer" data-nav-parent="self" data-vcenter-nav="1">
+                                                        <div class="gdlr-core-flexslider-custom-nav  gdlr-core-style-navigation-outer gdlr-core-center-align"><i class=" fa fa-long-arrow-left flex-prev" style="color: #17449e ;font-size: 40px ;left: -150px ;"></i><i class="fa fa-long-arrow-right flex-next" style="color: #17449e ;font-size: 40px ;right: -150px ;"></i></div>
+                                                        <ul class="slides">
+                                                            <li class="gdlr-core-item-mglr">
+                                                                <div class="gdlr-core-testimonial clearfix">
+                                                                    <div class="gdlr-core-testimonial-content-wrap">
+                                                                        <div class="gdlr-core-testimonial-quote gdlr-core-quote-font gdlr-core-skin-icon" style="font-size: 160px ;font-weight: 800 ;margin-top: 70px ;margin-bottom: 0px ;color: #17449e ;">&#8220;</div>
+                                                                        <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" style="font-size: 21px ;font-style: italic ;font-weight: 400 ;letter-spacing: 0px ;color: #7a7a7a ;padding-bottom: 20px ;">
+                                                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                                                        </div>
+                                                                        <div class="gdlr-core-testimonial-author-wrap clearfix">
+                                                                            <div class="gdlr-core-testimonial-author-image gdlr-core-media-image"><img src="{{asset('theme/upload/testimonial-1-150x150.jpg')}}" alt="" width="150" height="150" title="testimonial-1"></div>
+                                                                            <div class="gdlr-core-testimonial-author-content">
+                                                                                <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title" style="color: #17449e ;font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;">Mildred Payne</div>
+                                                                                <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption" style="color: #a2a2a2 ;font-size: 15px ;font-style: normal ;font-weight: 400 ;">Allergist</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="gdlr-core-item-mglr">
+                                                                <div class="gdlr-core-testimonial clearfix">
+                                                                    <div class="gdlr-core-testimonial-content-wrap">
+                                                                        <div class="gdlr-core-testimonial-quote gdlr-core-quote-font gdlr-core-skin-icon" style="font-size: 160px ;font-weight: 800 ;margin-top: 70px ;margin-bottom: 0px ;color: #17449e ;">&#8220;</div>
+                                                                        <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" style="font-size: 21px ;font-style: italic ;font-weight: 400 ;letter-spacing: 0px ;color: #7a7a7a ;padding-bottom: 20px ;">
+                                                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                                                        </div>
+                                                                        <div class="gdlr-core-testimonial-author-wrap clearfix">
+                                                                            <div class="gdlr-core-testimonial-author-image gdlr-core-media-image"><img src="{{asset('theme/upload/testimonial-2-150x150.jpg')}}" alt="" width="150" height="150" title="testimonial-2"></div>
+                                                                            <div class="gdlr-core-testimonial-author-content">
+                                                                                <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title" style="color: #17449e ;font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;">Mary Jane</div>
+                                                                                <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption" style="color: #a2a2a2 ;font-size: 15px ;font-style: normal ;font-weight: 400 ;">Patient</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="gdlr-core-item-mglr">
+                                                                <div class="gdlr-core-testimonial clearfix">
+                                                                    <div class="gdlr-core-testimonial-content-wrap">
+                                                                        <div class="gdlr-core-testimonial-quote gdlr-core-quote-font gdlr-core-skin-icon" style="font-size: 160px ;font-weight: 800 ;margin-top: 70px ;margin-bottom: 0px ;color: #17449e ;">&#8220;</div>
+                                                                        <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" style="font-size: 21px ;font-style: italic ;font-weight: 400 ;letter-spacing: 0px ;color: #7a7a7a ;padding-bottom: 20px ;">
+                                                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                                                        </div>
+                                                                        <div class="gdlr-core-testimonial-author-wrap clearfix">
+                                                                            <div class="gdlr-core-testimonial-author-image gdlr-core-media-image"><img src="{{asset('theme/upload/testimonial-4-150x150.jpg')}}" alt="" width="150" height="150" title="testimonial-4"></div>
+                                                                            <div class="gdlr-core-testimonial-author-content">
+                                                                                <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title" style="color: #17449e ;font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;">Paul Smith</div>
+                                                                                <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption" style="color: #a2a2a2 ;font-size: 15px ;font-style: normal ;font-weight: 400 ;">Patient</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-wrapper " style="padding: 0px 0px 0px 0px;" data-skin="Mediz A1 Column SVC">
+                        <div class="gdlr-core-pbf-background-wrap"></div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-pbf-wrapper-full-no-space">
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20 gdlr-core-column-first" id="gdlr-core-column-2706">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 50px 0px 60px 60px;" data-sync-height="col-features-hp-2" data-sync-height-center="">
+                                        <div class="gdlr-core-pbf-background-wrap">
+                                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('theme/upload/BG-icon1.jpg')}}') ;background-size: cover ;background-position: center ;" data-parallax-speed="0"></div>
+                                        </div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-with-caption gdlr-core-item-pdlr" style="padding-bottom: 0px;">
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 10px;"><img src="{{asset('theme/upload/icon-1-1.png')}}" alt="" width="30" height="30" title="icon-1"></div>
+                                                    <div class="gdlr-core-column-service-content-wrapper">
+                                                        <div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 0px ;">
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 21px ;font-weight: 500 ;letter-spacing: 0px ;text-transform: none ;">Get directions</h3>
+                                                            <div class="gdlr-core-column-service-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 19px ;font-weight: 600 ;font-style: italic ;">Find us on map</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20" id="gdlr-core-column-63819">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 50px 0px 60px 60px;" data-sync-height="col-features-hp-2" data-sync-height-center="">
+                                        <div class="gdlr-core-pbf-background-wrap" style="background-color: #113989 ;"></div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-with-caption gdlr-core-item-pdlr" style="padding-bottom: 0px;">
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 10px;"><img src="{{asset('theme/upload/icon2.png')}}" alt="" width="33" height="31" title="icon2"></div>
+                                                    <div class="gdlr-core-column-service-content-wrapper">
+                                                        <div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 0px ;">
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 21px ;font-weight: 500 ;letter-spacing: 0px ;text-transform: none ;">Contact & Appointment</h3>
+                                                            <div class="gdlr-core-column-service-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 19px ;font-weight: 600 ;font-style: italic ;">Send us an email</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20" id="gdlr-core-column-18977">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 50px 0px 60px 60px;" data-sync-height="col-features-hp-2" data-sync-height-center="">
+                                        <div class="gdlr-core-pbf-background-wrap">
+                                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('theme/upload/Bg-icon3.jpg')}}') ;background-size: cover ;background-position: center ;" data-parallax-speed="0"></div>
+                                        </div>
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js  gdlr-core-sync-height-content">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-left gdlr-core-with-caption gdlr-core-item-pdlr" style="padding-bottom: 0px;padding-left: 0px;">
+                                                    <div class="gdlr-core-column-service-media gdlr-core-media-image" style="margin-top: 10px;"><img src="{{asset('theme/upload/icon3.png')}}" alt="" width="39" height="30" title="icon3"></div>
+                                                    <div class="gdlr-core-column-service-content-wrapper">
+                                                        <div class="gdlr-core-column-service-title-wrap" style="margin-bottom: 0px ;">
+                                                            <h3 class="gdlr-core-column-service-title gdlr-core-skin-title" style="font-size: 21px ;font-weight: 500 ;letter-spacing: 0px ;text-transform: none ;">Emergency Service</h3>
+                                                            <div class="gdlr-core-column-service-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 19px ;font-weight: 600 ;font-style: italic ;">Call : +1-2345-3455-33</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="mediz-footer-wrapper ">
+                    <div class="mediz-footer-container mediz-container clearfix">
+                        <div class="mediz-footer-column mediz-item-pdlr mediz-column-15">
+                            <div id="text-1" class="widget widget_text mediz-widget">
+                                <div class="textwidget">
+                                    <p><img class="alignnone size-full wp-image-6129" src="{{asset('theme/upload/logo-1.png')}}" alt="" width="170">
+                                        <br>
+                                        <span class="gdlr-core-space-shortcode" style="margin-top: -27px ;"></span>
+                                        <br> Box 3233
+                                        <br> 1810 Kings Way
+                                        <br> King Street, 5th Avenue, New York
+                                        <br>
+                                        <span class="gdlr-core-space-shortcode" style="margin-top: 0px ;"></span>
+                                        <br>
+                                        <i class="icon-phone" style="font-size: 19px ;color: #17449E ;margin-right: 10px ;"></i><span style="color: #17449e;">+1-2345-3455-33</span>
+                                        <br>
+                                        <span class="gdlr-core-space-shortcode" style="margin-top: -15px ;"></span>
+                                        <br>
+                                        <i class="icon-envelope" style="font-size: 19px ;color: #17449E ;margin-right: 10px ;"></i><a href="#" style="color: #17449E;"><span class="__cf_email__">test@gmail.com</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mediz-footer-column mediz-item-pdlr mediz-column-15">
+                            <div id="nav_menu-3" class="widget widget_nav_menu mediz-widget">
+                                <h3 class="mediz-widget-title">About Us</h3><span class="clear"></span>
+                                <div class="menu-about-us-container">
+                                    <ul id="menu-about-us" class="menu">
+                                        <li class="menu-item"><a href="#">Our Mission &#038; Values</a></li>
+                                        <li class="menu-item"><a href="#">Leadership</a></li>
+                                        <li class="menu-item"><a href="#">Transformation</a></li>
+                                        <li class="menu-item"><a href="#">Awards</a></li>
+                                        <li class="menu-item"><a href="#">Diversity is Our Specialty</a></li>
+                                        <li class="menu-item"><a href="#">Publications &#038; Reports</a></li>
+                                        <li class="menu-item"><a href="#">Policies &#038; Procedures</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mediz-footer-column mediz-item-pdlr mediz-column-15">
+                            <div id="nav_menu-2" class="widget widget_nav_menu mediz-widget">
+                                <h3 class="mediz-widget-title">Our Services</h3><span class="clear"></span>
+                                <div class="menu-our-services-container">
+                                    <ul id="menu-our-services" class="menu">
+                                        <li class="menu-item"><a href="#">Lung Diseases</a></li>
+                                        <li class="menu-item"><a href="#">Orthopaedic</a></li>
+                                        <li class="menu-item"><a href="#">Pharmacy</a></li>
+                                        <li class="menu-item"><a href="#">Sport Injury</a></li>
+                                        <li class="menu-item"><a href="#">Heart</a></li>
+                                        <li class="menu-item"><a href="#">Dental Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mediz-footer-column mediz-item-pdlr mediz-column-15">
+                            <div id="gdlr-core-opening-hour-widget-3" class="widget widget_gdlr-core-opening-hour-widget mediz-widget">
+                                <h3 class="mediz-widget-title">Hospital Hours</h3><span class="clear"></span>
+                                <div class="gdlr-core-opening-hour-widget" style="color: #17449e ;">
+                                    <div class="gdlr-core-opening-hour-widget-list clearfix"><span class="gdlr-core-head"><i class="icon-clock"></i>Monday - Friday</span><span class="gdlr-core-tail">08:00 - 20:00</span></div>
+                                    <div class="gdlr-core-opening-hour-widget-list clearfix"><span class="gdlr-core-head"><i class="icon-clock"></i>Saturday</span><span class="gdlr-core-tail">09:00 - 18:00</span></div>
+                                    <div class="gdlr-core-opening-hour-widget-list clearfix"><span class="gdlr-core-head"><i class="icon-clock"></i>Sunday</span><span class="gdlr-core-tail">09:00 - 18:00</span></div>
+                                </div>
+                            </div>
+                            <div id="text-9" class="widget widget_text mediz-widget">
+                                <div class="textwidget">
+                                    <p><span class="gdlr-core-space-shortcode" style="margin-top: -23px ;"></span><a class="gdlr-core-button gdlr-core-button-shortcode  gdlr-core-button-solid gdlr-core-button-no-border" href="contact.html" target="_blank" style="box-shadow: 0px 0px 30px rgba(0, 0, 0,0.1); -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0,0.1); -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0,0.1); font-size: 16px ;font-weight: 700 ;letter-spacing: 0px ;color: #17449E ;padding: 14px 50px 17px 50px;text-transform: none ;border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;background: #ffffff ;" rel="noopener noreferrer"><span class="gdlr-core-content">Emergency : 24 hours</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mediz-copyright-wrapper">
+                    <div class="mediz-copyright-container mediz-container clearfix">
+                        <div class="mediz-copyright-left mediz-item-pdlr">
+                            <div class="gdlr-core-social-network-item gdlr-core-item-pdb  gdlr-core-none-align" style="padding-bottom: 0px ;"><a href="#url" target="_blank" class="gdlr-core-social-network-icon" title="facebook" style="font-size: 17px ;color: #17449E ;"><i class="fa fa-facebook"></i></a><a href="#" target="_blank" class="gdlr-core-social-network-icon" title="linkedin" style="font-size: 17px ;color: #17449E ;"><i class="fa fa-linkedin"></i></a><a href="#" target="_blank" class="gdlr-core-social-network-icon" title="skype" style="font-size: 17px ;color: #17449E ;"><i class="fa fa-skype"></i></a><a href="#url" target="_blank" class="gdlr-core-social-network-icon" title="twitter" style="font-size: 17px ;color: #17449E ;"><i class="fa fa-twitter"></i></a></div>
+                        </div>
+                        <div class="mediz-copyright-right mediz-item-pdlr">Copyright 2024 Medi-Connect Africa | All Right Reserved</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='{{asset('theme/js/jquery/jquery.js')}}'></script>
+    <script type='text/javascript' src='{{asset('theme/js/jquery/jquery-migrate.min.js')}}'></script>
+    <script type='text/javascript' src='{{asset('theme/plugins/revslider/public/assets/js/revolution.tools.min.js')}}'></script>
+    <script type='text/javascript' src='{{asset('theme/plugins/revslider/public/assets/js/rs6.min.js')}}'></script>
+
+
+    <script type="text/javascript">
+        function setREVStartSize(t) {
+            try {
+                var h, e = document.getElementById(t.c).parentNode.offsetWidth;
+                if (e = 0 === e || isNaN(e) ? window.innerWidth : e, t.tabw = void 0 === t.tabw ? 0 : parseInt(t.tabw), t.thumbw = void 0 === t.thumbw ? 0 : parseInt(t.thumbw), t.tabh = void 0 === t.tabh ? 0 : parseInt(t.tabh), t.thumbh = void 0 === t.thumbh ? 0 : parseInt(t.thumbh), t.tabhide = void 0 === t.tabhide ? 0 : parseInt(t.tabhide), t.thumbhide = void 0 === t.thumbhide ? 0 : parseInt(t.thumbhide), t.mh = void 0 === t.mh || "" == t.mh || "auto" === t.mh ? 0 : parseInt(t.mh, 0), "fullscreen" === t.layout || "fullscreen" === t.l) h = Math.max(t.mh, window.innerHeight);
+                else {
+                    for (var i in t.gw = Array.isArray(t.gw) ? t.gw : [t.gw], t.rl) void 0 !== t.gw[i] && 0 !== t.gw[i] || (t.gw[i] = t.gw[i - 1]);
+                    for (var i in t.gh = void 0 === t.el || "" === t.el || Array.isArray(t.el) && 0 == t.el.length ? t.gh : t.el, t.gh = Array.isArray(t.gh) ? t.gh : [t.gh], t.rl) void 0 !== t.gh[i] && 0 !== t.gh[i] || (t.gh[i] = t.gh[i - 1]);
+                    var r, a = new Array(t.rl.length),
+                        n = 0;
+                    for (var i in t.tabw = t.tabhide >= e ? 0 : t.tabw, t.thumbw = t.thumbhide >= e ? 0 : t.thumbw, t.tabh = t.tabhide >= e ? 0 : t.tabh, t.thumbh = t.thumbhide >= e ? 0 : t.thumbh, t.rl) a[i] = t.rl[i] < window.innerWidth ? 0 : t.rl[i];
+                    for (var i in r = a[0], a) r > a[i] && 0 < a[i] && (r = a[i], n = i);
+                    var d = e > t.gw[n] + t.tabw + t.thumbw ? 1 : (e - (t.tabw + t.thumbw)) / t.gw[n];
+                    h = t.gh[n] * d + (t.tabh + t.thumbh)
+                }
+                void 0 === window.rs_init_css && (window.rs_init_css = document.head.appendChild(document.createElement("style"))), document.getElementById(t.c).height = h, window.rs_init_css.innerHTML += "#" + t.c + "_wrapper { height: " + h + "px }"
+            } catch (t) {
+                console.log("Failure at Presize of Slider:" + t)
+            }
+        };
+    </script>
+    <script type="text/javascript">
+        if (typeof revslider_showDoubleJqueryError === "undefined") {
+            function revslider_showDoubleJqueryError(sliderID) {
+                var err = "<div class='rs_error_message_box'>";
+                err += "<div class='rs_error_message_oops'>Oops...</div>";
+                err += "<div class='rs_error_message_content'>";
+                err += "You have some jquery.js library include that comes after the Slider Revolution files js inclusion.<br>";
+                err += "To fix this, you can:<br>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on";
+                err += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it";
+                err += "</div>";
+                err += "</div>";
+                jQuery(sliderID).show().html(err);
+            }
+        }
+    </script>
+    <script type='text/javascript' src='{{asset('theme/plugins/goodlayers-core/plugins/script.js')}}'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var gdlr_core_pbf = {
+            "admin": "",
+            "video": {
+                "width": "640",
+                "height": "360"
+            },
+            "ajax_url": "#"
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='{{asset('theme/plugins/goodlayers-core/include/js/page-builder.js')}}'></script>
+    <script type='text/javascript' src='{{asset('theme/plugins/zeno-font-resizer/js/js.cookie.js')}}'></script>
+    <script type='text/javascript' src='{{asset('theme/plugins/zeno-font-resizer/js/jquery.fontsize.js')}}'></script>
+    <script type='text/javascript' src='{{asset('theme/plugins/google-map-plugin/assets/js/maps.js')}}'></script>
+    <script type='text/javascript' src='{{asset('theme/js/jquery/ui/effect.min.js')}}'></script>
+    <script type='text/javascript' src='{{asset('theme/js/jquery.mmenu.js')}}'></script>
+    <script type='text/javascript' src='{{asset('theme/js/jquery.superfish.js')}}'></script>
+    <script type='text/javascript' src='{{asset('theme/js/plugins.min.js')}}'></script>
+
+    <script type="text/javascript">
+        setREVStartSize({
+            c: 'rev_slider_2_1',
+            rl: [1240, 1240, 1240, 480],
+            el: [700, 700, 700, 500],
+            gw: [1280, 1280, 1280, 480],
+            gh: [700, 700, 700, 500],
+            layout: 'fullwidth',
+            mh: "0"
+        });
+        var revapi2,
+            tpj;
+        jQuery(function() {
+            tpj = jQuery;
+            if (tpj("#rev_slider_2_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_2_1");
+            } else {
+                revapi2 = tpj("#rev_slider_2_1").show().revolution({
+                    jsFileLocation: "{{asset('themeplugins/revslider/public/assets/js/')}}",
+                    sliderLayout: "fullwidth",
+                    visibilityLevels: "1240,1240,1240,480",
+                    gridwidth: "1280,1280,1280,480",
+                    gridheight: "700,700,700,500",
+                    minHeight: "",
+                    editorheight: "700,768,960,500",
+                    responsiveLevels: "1240,1240,1240,480",
+                    disableProgressBar: "on",
+                    navigation: {
+                        onHoverStop: false,
+                        touch: {
+                            touchenabled: true
+                        },
+                        arrows: {
+                            enable: true,
+                            style: "uranus",
+                            hide_onmobile: true,
+                            hide_under: "415px",
+                            hide_onleave: true,
+                            left: {
+                                h_offset: 30
+                            },
+                            right: {
+                                h_offset: 30
+                            }
+                        },
+                        bullets: {
+                            enable: true,
+                            tmp: "<span class=\"tp-bullet-inner\"></span>",
+                            style: "uranus",
+                            hide_over: "416px",
+                            v_offset: 37,
+                            space: 6
+                        }
+                    },
+                    fallbacks: {
+                        allowHTML5AutoPlayOnAndroid: true
+                    },
+                });
+            }
+
+        });
+    </script>
+    <script>
+        var htmlDivCss = unescape("%40media%20only%20screen%20and%20%28max-width%3A%20767px%29%7B%0Ars-sbg%20%7B%0A%20%20%20%20opacity%3A%200.4%20%21important%3B%0A%09filter%3A%20alpha%28opacity%3D40%29%20%21important%3B%0A%7D%0A%7D");
+        var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+        if (htmlDiv) {
+            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+        } else {
+            var htmlDiv = document.createElement('div');
+            htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+            document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+        }
+    </script>
+    <script>
+        var htmlDivCss = unescape("%23rev_slider_2_1_wrapper%20.uranus.tparrows%20%7B%0A%20%20width%3A50px%3B%0A%20%20height%3A50px%3B%0A%20%20background%3Argba%28255%2C255%2C255%2C0%29%3B%0A%20%7D%0A%20%23rev_slider_2_1_wrapper%20.uranus.tparrows%3Abefore%20%7B%0A%20width%3A50px%3B%0A%20height%3A50px%3B%0A%20line-height%3A50px%3B%0A%20font-size%3A40px%3B%0A%20transition%3Aall%200.3s%3B%0A-webkit-transition%3Aall%200.3s%3B%0A%20%7D%0A%20%0A%20%20%23rev_slider_2_1_wrapper%20.uranus.tparrows%3Ahover%3Abefore%20%7B%0A%20%20%20%20opacity%3A0.75%3B%0A%20%20%7D%0A%23rev_slider_2_1_wrapper%20.uranus%20.tp-bullet%7B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20box-shadow%3A%200%200%200%202px%20rgba%28255%2C255%2C255%2C0%29%3B%0A%20%20-webkit-transition%3A%20box-shadow%200.3s%20ease%3B%0A%20%20transition%3A%20box-shadow%200.3s%20ease%3B%0A%20%20background%3Atransparent%3B%0A%20%20width%3A15px%3B%0A%20%20height%3A15px%3B%0A%7D%0A%23rev_slider_2_1_wrapper%20.uranus%20.tp-bullet.selected%2C%0A%23rev_slider_2_1_wrapper%20.uranus%20.tp-bullet%3Ahover%20%7B%0A%20%20box-shadow%3A%200%200%200%202px%20rgba%28255%2C255%2C255%2C1%29%3B%0A%20%20border%3Anone%3B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20background%3Atransparent%3B%0A%7D%0A%0A%23rev_slider_2_1_wrapper%20.uranus%20.tp-bullet-inner%20%7B%0A%20%20-webkit-transition%3A%20background-color%200.3s%20ease%2C%20-webkit-transform%200.3s%20ease%3B%0A%20%20transition%3A%20background-color%200.3s%20ease%2C%20transform%200.3s%20ease%3B%0A%20%20top%3A%200%3B%0A%20%20left%3A%200%3B%0A%20%20width%3A%20100%25%3B%0A%20%20height%3A%20100%25%3B%0A%20%20outline%3A%20none%3B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20background-color%3A%20rgba%28255%2C255%2C255%2C0%29%3B%0A%20%20background-color%3A%20rgba%28255%2C255%2C255%2C0.3%29%3B%0A%20%20text-indent%3A%20-999em%3B%0A%20%20cursor%3A%20pointer%3B%0A%20%20position%3A%20absolute%3B%0A%7D%0A%0A%23rev_slider_2_1_wrapper%20.uranus%20.tp-bullet.selected%20.tp-bullet-inner%2C%0A%23rev_slider_2_1_wrapper%20.uranus%20.tp-bullet%3Ahover%20.tp-bullet-inner%7B%0A%20transform%3A%20scale%280.4%29%3B%0A%20-webkit-transform%3A%20scale%280.4%29%3B%0A%20background-color%3Argba%28255%2C255%2C255%2C1%29%3B%0A%7D%0A");
+        var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+        if (htmlDiv) {
+            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+        } else {
+            var htmlDiv = document.createElement('div');
+            htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+            document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+        }
+    </script>
+    <script>
+        var htmlDivCss = unescape("%0A%0A%0A%0A");
+        var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+        if (htmlDiv) {
+            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+        } else {
+            var htmlDiv = document.createElement('div');
+            htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+            document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+        }
+    </script>
+
+</body>
 </html>
