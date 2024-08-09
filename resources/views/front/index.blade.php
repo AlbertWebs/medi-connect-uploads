@@ -320,32 +320,32 @@
                                     <div class="gdlr-core-tab-feature3-title-overlay"></div>
                                     <div class="gdlr-core-tab-feature3-title-sign"></div>
                                     <div class="gdlr-core-tab-feature3-title-content">
-                                        <h3 class="gdlr-core-tab-feature3-title">Client #1</h3>
-                                        <div class="gdlr-core-tab-feature3-caption">Best Experience</div>
+                                        <h3 class="gdlr-core-tab-feature3-title">Wolfgang</h3>
+                                        <div class="gdlr-core-tab-feature3-caption">Client Testimonial For HealthPlacid - Appendectomy</div>
                                     </div>
                                 </div>
                                 <div class="gdlr-core-tab-feature3-title-wrap gdlr-core-tab-action-title gdlr-core-column-15  gdlr-core-js clearfix" data-tab-id="2">
                                     <div class="gdlr-core-tab-feature3-title-overlay"></div>
                                     <div class="gdlr-core-tab-feature3-title-sign"></div>
                                     <div class="gdlr-core-tab-feature3-title-content">
-                                        <h3 class="gdlr-core-tab-feature3-title">Client #2</h3>
-                                        <div class="gdlr-core-tab-feature3-caption">Best Treatment</div>
+                                        <h3 class="gdlr-core-tab-feature3-title">Gail</h3>
+                                        <div class="gdlr-core-tab-feature3-caption">Client Testimonial For HealthPlacid - Hip Surgery</div>
                                     </div>
                                 </div>
                                 <div class="gdlr-core-tab-feature3-title-wrap gdlr-core-tab-action-title gdlr-core-column-15  gdlr-core-js clearfix" data-tab-id="3">
                                     <div class="gdlr-core-tab-feature3-title-overlay"></div>
                                     <div class="gdlr-core-tab-feature3-title-sign"></div>
                                     <div class="gdlr-core-tab-feature3-title-content">
-                                        <h3 class="gdlr-core-tab-feature3-title">Client #3</h3>
-                                        <div class="gdlr-core-tab-feature3-caption">Seemless Experience</div>
+                                        <h3 class="gdlr-core-tab-feature3-title">Simone</h3>
+                                        <div class="gdlr-core-tab-feature3-caption">Client Testimonial For HealthPlacid - Crohn's Disease</div>
                                     </div>
                                 </div>
                                 <div class="gdlr-core-tab-feature3-title-wrap gdlr-core-tab-action-title gdlr-core-column-15  gdlr-core-js clearfix" data-tab-id="4">
                                     <div class="gdlr-core-tab-feature3-title-overlay"></div>
                                     <div class="gdlr-core-tab-feature3-title-sign"></div>
                                     <div class="gdlr-core-tab-feature3-title-content">
-                                        <h3 class="gdlr-core-tab-feature3-title">Client #4</h3>
-                                        <div class="gdlr-core-tab-feature3-caption">Dope programme</div>
+                                        <h3 class="gdlr-core-tab-feature3-title">Sergio</h3>
+                                        <div class="gdlr-core-tab-feature3-caption">Client Testimonial (in Spanish) For HealthPlacid - Dental Issue</div>
                                     </div>
                                 </div>
                             </div>
@@ -355,19 +355,8 @@
                                     <div class="gdlr-core-tab-feature3-content-top-overlay2"></div>
                                     <div class="gdlr-core-tab-feature3-content-bottom-overlay" style="background: #113989 ;"></div>
                                     <div class="gdlr-core-container clearfix">
-                                        <div class="gdlr-core-tab-feature3-top" style="height: 500px ;"><a class="gdlr-core-lightgallery gdlr-core-js gdlr-core-tab-feature3-video-lb" href="https://www.youtube.com/watch?v=KAvQsRL-jeo"><i class="fa fa-play"></i></a>
+                                        <div class="gdlr-core-tab-feature3-top" style="height: 500px ;"><a class="gdlr-core-lightgallery gdlr-core-js gdlr-core-tab-feature3-video-lb" href="https://www.youtube.com/watch?v=PHD76TAZ7cM"><i class="fa fa-play"></i></a>
                                             <div class="clear"></div>
-                                        </div>
-                                        <div class="gdlr-core-tab-feature3-content-left gdlr-core-item-pdlr">
-                                            <h3 class="gdlr-core-tab-feature3-content-left-title">John Kirimi<span class="gdlr-core-tab-feature3-content-left-title-divider"></span></h3>
-                                            <div class="gdlr-core-tab-feature3-content-left-image gdlr-core-media-image"><img src="{{asset('theme/upload/video-featured-1-2.jpg')}}" alt="" width="500" height="276" title="video-featured-1-2"></div>
-                                        </div>
-                                        <div class="gdlr-core-tab-feature3-content-right gdlr-core-item-pdlr">Historically, drugs were discovered through identifying the active ingredient from traditional remedies or by serendipitous discovery. Later chemical libraries of synthetic small molecules.
-                                            <span class="gdlr-core-space-shortcode" style="margin-top: 20px ;"></span>
-                                            <div style="color: #C4D8FF; font-size: 18px; line-height: 1.7;">
-                                                Modern drug discovery involves the identification of screening hits, medicinal chemistry and optimization of those hits to increase the affinity, selectivity (to reduce the potential of side effects), efficacy/potency, metabolic stability (to increase the half-life), and oral bioavailability. Once a compound that fulfills all of these requirements.
-                                            </div>
-                                            <span class="gdlr-core-space-shortcode" style="margin-top: 35px ;"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -376,20 +365,8 @@
                                     <div class="gdlr-core-tab-feature3-content-top-overlay2"></div>
                                     <div class="gdlr-core-tab-feature3-content-bottom-overlay" style="background: #113989 ;"></div>
                                     <div class="gdlr-core-container clearfix">
-                                        <div class="gdlr-core-tab-feature3-top" style="height: 500px ;"><a class="gdlr-core-lightgallery gdlr-core-js gdlr-core-tab-feature3-video-lb" href="https://www.youtube.com/watch?v=KAvQsRL-jeo"><i class="fa fa-play"></i></a>
+                                        <div class="gdlr-core-tab-feature3-top" style="height: 500px ;"><a class="gdlr-core-lightgallery gdlr-core-js gdlr-core-tab-feature3-video-lb" href="https://www.youtube.com/watch?v=AgmmCSHCWPo"><i class="fa fa-play"></i></a>
                                             <div class="clear"></div>
-                                        </div>
-                                        <div class="gdlr-core-tab-feature3-content-left gdlr-core-item-pdlr">
-                                            <h3 class="gdlr-core-tab-feature3-content-left-title">Clarice Bosire<span class="gdlr-core-tab-feature3-content-left-title-divider"></span></h3>
-                                            <div class="gdlr-core-tab-feature3-content-left-image gdlr-core-media-image"><img src="{{asset('theme/upload/video-featured-2-2.jpg')}}" alt="" width="500" height="276" title="video-featured-2-2"></div>
-                                        </div>
-                                        <div class="gdlr-core-tab-feature3-content-right gdlr-core-item-pdlr">Historically, drugs were discovered through identifying the active ingredient from traditional remedies or by serendipitous discovery. Later chemical libraries of synthetic small molecules.
-                                            <span class="gdlr-core-space-shortcode" style="margin-top: 20px ;"></span>
-                                            <div style="color: #C4D8FF; font-size: 18px; line-height: 1.7;">
-                                                Modern drug discovery involves the identification of screening hits, medicinal chemistry and optimization of those hits to increase the affinity, selectivity (to reduce the potential of side effects), efficacy/potency, metabolic stability (to increase the half-life), and oral bioavailability. Once a compound that fulfills all of these requirements.
-                                            </div>
-                                            <span class="gdlr-core-space-shortcode" style="margin-top: 35px ;"></span>
-
                                         </div>
                                     </div>
                                 </div>
@@ -398,42 +375,18 @@
                                     <div class="gdlr-core-tab-feature3-content-top-overlay2"></div>
                                     <div class="gdlr-core-tab-feature3-content-bottom-overlay" style="background: #113989 ;"></div>
                                     <div class="gdlr-core-container clearfix">
-                                        <div class="gdlr-core-tab-feature3-top" style="height: 500px ;"><a class="gdlr-core-lightgallery gdlr-core-js gdlr-core-tab-feature3-video-lb" href="https://www.youtube.com/watch?v=KAvQsRL-jeo"><i class="fa fa-play"></i></a>
+                                        <div class="gdlr-core-tab-feature3-top" style="height: 500px ;"><a class="gdlr-core-lightgallery gdlr-core-js gdlr-core-tab-feature3-video-lb" href="https://www.youtube.com/watch?v=RW-yzbTrMoM"><i class="fa fa-play"></i></a>
                                             <div class="clear"></div>
-                                        </div>
-                                        <div class="gdlr-core-tab-feature3-content-left gdlr-core-item-pdlr">
-                                            <h3 class="gdlr-core-tab-feature3-content-left-title">Ken Odhiambo<span class="gdlr-core-tab-feature3-content-left-title-divider"></span></h3>
-                                            <div class="gdlr-core-tab-feature3-content-left-image gdlr-core-media-image"><img src="{{asset('theme/upload/video-featured-3-2-1.jpg')}}" alt="" width="500" height="276" title="video-featured-3-2"></div>
-                                        </div>
-                                        <div class="gdlr-core-tab-feature3-content-right gdlr-core-item-pdlr">Historically, drugs were discovered through identifying the active ingredient from traditional remedies or by serendipitous discovery. Later chemical libraries of synthetic small molecules.
-                                            <span class="gdlr-core-space-shortcode" style="margin-top: 20px ;"></span>
-                                            <div style="color: #C4D8FF; font-size: 18px; line-height: 1.7;">
-                                                Modern drug discovery involves the identification of screening hits, medicinal chemistry and optimization of those hits to increase the affinity, selectivity (to reduce the potential of side effects), efficacy/potency, metabolic stability (to increase the half-life), and oral bioavailability. Once a compound that fulfills all of these requirements.
-                                            </div>
-                                            <span class="gdlr-core-space-shortcode" style="margin-top: 35px ;"></span>
-
                                         </div>
                                     </div>
                                 </div>
-                                <div class="gdlr-core-tab-feature3-content-wrap " data-tab-id="4" style="background-image: url('{{asset('theme/upload/video-featured-4-1.jpg')}}') ;">
+                                <div class="gdlr-core-tab-feature3-content-wrap " data-tab-id="4" style="background-image: url('{{asset('theme/upload/video-featured-3-1.jpg')}}') ;">
                                     <div class="gdlr-core-tab-feature3-content-top-overlay" style="background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-moz-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-o-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-webkit-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));"></div>
                                     <div class="gdlr-core-tab-feature3-content-top-overlay2"></div>
                                     <div class="gdlr-core-tab-feature3-content-bottom-overlay" style="background: #113989 ;"></div>
                                     <div class="gdlr-core-container clearfix">
-                                        <div class="gdlr-core-tab-feature3-top" style="height: 500px ;"><a class="gdlr-core-lightgallery gdlr-core-js gdlr-core-tab-feature3-video-lb" href="https://www.youtube.com/watch?v=KAvQsRL-jeo"><i class="fa fa-play"></i></a>
+                                        <div class="gdlr-core-tab-feature3-top" style="height: 500px ;"><a class="gdlr-core-lightgallery gdlr-core-js gdlr-core-tab-feature3-video-lb" href="https://www.youtube.com/watch?v=8pejNle1OiM"><i class="fa fa-play"></i></a>
                                             <div class="clear"></div>
-                                        </div>
-                                        <div class="gdlr-core-tab-feature3-content-left gdlr-core-item-pdlr">
-                                            <h3 class="gdlr-core-tab-feature3-content-left-title">Elphas Kimutai<span class="gdlr-core-tab-feature3-content-left-title-divider"></span></h3>
-                                            <div class="gdlr-core-tab-feature3-content-left-image gdlr-core-media-image"><img src="{{asset('theme/upload/video-featured-4-2.jpg')}}" alt="" width="500" height="276" title="video-featured-4-2"></div>
-                                        </div>
-                                        <div class="gdlr-core-tab-feature3-content-right gdlr-core-item-pdlr">Historically, drugs were discovered through identifying the active ingredient from traditional remedies or by serendipitous discovery. Later chemical libraries of synthetic small molecules.
-                                            <span class="gdlr-core-space-shortcode" style="margin-top: 20px ;"></span>
-                                            <div style="color: #C4D8FF; font-size: 18px; line-height: 1.7;">
-                                                Modern drug discovery involves the identification of screening hits, medicinal chemistry and optimization of those hits to increase the affinity, selectivity (to reduce the potential of side effects), efficacy/potency, metabolic stability (to increase the half-life), and oral bioavailability. Once a compound that fulfills all of these requirements.
-                                            </div>
-                                            <span class="gdlr-core-space-shortcode" style="margin-top: 35px ;"></span>
-
                                         </div>
                                     </div>
                                 </div>
@@ -454,7 +407,7 @@
                     <div class="gdlr-core-pbf-element">
                         <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr">
                             <div class="gdlr-core-title-item-title-wrap ">
-                                <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 36px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #020202 ;">Testimonial<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
+                                <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 36px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #020202 ;">Testimonials<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
                         </div>
                     </div>
                     <div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first" id="gdlr-core-column-73112">
@@ -471,46 +424,18 @@
                                                         <div class="gdlr-core-testimonial-content-wrap">
                                                             <div class="gdlr-core-testimonial-quote gdlr-core-quote-font gdlr-core-skin-icon" style="font-size: 160px ;font-weight: 800 ;margin-top: 70px ;margin-bottom: 0px ;color: #17449e ;">&#8220;</div>
                                                             <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" style="font-size: 21px ;font-style: italic ;font-weight: 400 ;letter-spacing: 0px ;color: #7a7a7a ;padding-bottom: 20px ;">
-                                                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                                                <p>
+                                                                    I can't thank Medi Connect Africa enough for the exceptional support and guidance they provided throughout my health journey. From the moment I reached out to them, their team was attentive and professional, ensuring every detail was taken care of.
+                                                                    <br><br>
+                                                                    I recently had a hernia surgery in Ahmedabad, India, and the entire experience exceeded my expectations. The surgical team in Ahmedabad was highly skilled and attentive, and the facilities were top-notch. Medi Connect Africa made sure that my travel, accommodation, and medical arrangements were seamless and stress-free. They were there for me every step of the way, from the initial consultation to my post-surgery follow-ups.
+                                                                    <br><br>
+                                                                    Thanks to their impeccable service, my recovery has been smooth, and I'm now back to my normal activities with no complications. If you're considering health tourism, I highly recommend Medi Connect Africa for their expertise and compassionate care. They truly made a difference in my journey to better health.
+                                                                </p>
                                                             </div>
                                                             <div class="gdlr-core-testimonial-author-wrap clearfix">
-                                                                <div class="gdlr-core-testimonial-author-image gdlr-core-media-image"><img src="{{asset('theme/upload/testimonial-1-150x150.jpg')}}" alt="" width="150" height="150" title="testimonial-1"></div>
+                                                                {{-- <div class="gdlr-core-testimonial-author-image gdlr-core-media-image"><img src="{{asset('theme/upload/testimonial-1-150x150.jpg')}}" alt="" width="150" height="150" title="testimonial-1"></div> --}}
                                                                 <div class="gdlr-core-testimonial-author-content">
                                                                     <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title" style="color: #17449e ;font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;">Mildred Payne</div>
-                                                                    <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption" style="color: #a2a2a2 ;font-size: 15px ;font-style: normal ;font-weight: 400 ;">Allergist</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-core-item-mglr">
-                                                    <div class="gdlr-core-testimonial clearfix">
-                                                        <div class="gdlr-core-testimonial-content-wrap">
-                                                            <div class="gdlr-core-testimonial-quote gdlr-core-quote-font gdlr-core-skin-icon" style="font-size: 160px ;font-weight: 800 ;margin-top: 70px ;margin-bottom: 0px ;color: #17449e ;">&#8220;</div>
-                                                            <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" style="font-size: 21px ;font-style: italic ;font-weight: 400 ;letter-spacing: 0px ;color: #7a7a7a ;padding-bottom: 20px ;">
-                                                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                                                            </div>
-                                                            <div class="gdlr-core-testimonial-author-wrap clearfix">
-                                                                <div class="gdlr-core-testimonial-author-image gdlr-core-media-image"><img src="{{asset('theme/upload/testimonial-2-150x150.jpg')}}" alt="" width="150" height="150" title="testimonial-2"></div>
-                                                                <div class="gdlr-core-testimonial-author-content">
-                                                                    <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title" style="color: #17449e ;font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;">Mary Jane</div>
-                                                                    <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption" style="color: #a2a2a2 ;font-size: 15px ;font-style: normal ;font-weight: 400 ;">Patient</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-core-item-mglr">
-                                                    <div class="gdlr-core-testimonial clearfix">
-                                                        <div class="gdlr-core-testimonial-content-wrap">
-                                                            <div class="gdlr-core-testimonial-quote gdlr-core-quote-font gdlr-core-skin-icon" style="font-size: 160px ;font-weight: 800 ;margin-top: 70px ;margin-bottom: 0px ;color: #17449e ;">&#8220;</div>
-                                                            <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" style="font-size: 21px ;font-style: italic ;font-weight: 400 ;letter-spacing: 0px ;color: #7a7a7a ;padding-bottom: 20px ;">
-                                                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                                                            </div>
-                                                            <div class="gdlr-core-testimonial-author-wrap clearfix">
-                                                                <div class="gdlr-core-testimonial-author-image gdlr-core-media-image"><img src="{{asset('theme/upload/testimonial-4-150x150.jpg')}}" alt="" width="150" height="150" title="testimonial-4"></div>
-                                                                <div class="gdlr-core-testimonial-author-content">
-                                                                    <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title" style="color: #17449e ;font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;">Paul Smith</div>
                                                                     <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption" style="color: #a2a2a2 ;font-size: 15px ;font-style: normal ;font-weight: 400 ;">Patient</div>
                                                                 </div>
                                                             </div>

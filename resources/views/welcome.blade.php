@@ -1408,7 +1408,7 @@
                                 <div class="gdlr-core-pbf-element">
                                     <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr">
                                         <div class="gdlr-core-title-item-title-wrap ">
-                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 36px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #020202 ;">Testimonial<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
+                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 36px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #020202 ;">Testimonials<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
                                     </div>
                                 </div>
                                 <div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first" id="gdlr-core-column-73112">
@@ -1425,47 +1425,19 @@
                                                                     <div class="gdlr-core-testimonial-content-wrap">
                                                                         <div class="gdlr-core-testimonial-quote gdlr-core-quote-font gdlr-core-skin-icon" style="font-size: 160px ;font-weight: 800 ;margin-top: 70px ;margin-bottom: 0px ;color: #17449e ;">&#8220;</div>
                                                                         <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" style="font-size: 21px ;font-style: italic ;font-weight: 400 ;letter-spacing: 0px ;color: #7a7a7a ;padding-bottom: 20px ;">
-                                                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                                                            <p>
+                                                                                I can't thank Medi Connect Africa enough for the exceptional support and guidance they provided throughout my health journey. From the moment I reached out to them, their team was attentive and professional, ensuring every detail was taken care of.
+                                                                                <br><br>
+                                                                                I recently had a hernia surgery in Ahmedabad, India, and the entire experience exceeded my expectations. The surgical team in Ahmedabad was highly skilled and attentive, and the facilities were top-notch. Medi Connect Africa made sure that my travel, accommodation, and medical arrangements were seamless and stress-free. They were there for me every step of the way, from the initial consultation to my post-surgery follow-ups.
+                                                                                <br><br>
+                                                                                Thanks to their impeccable service, my recovery has been smooth, and I'm now back to my normal activities with no complications. If you're considering health tourism, I highly recommend Medi Connect Africa for their expertise and compassionate care. They truly made a difference in my journey to better health.
+                                                                            </p>
                                                                         </div>
                                                                         <div class="gdlr-core-testimonial-author-wrap clearfix">
                                                                             <div class="gdlr-core-testimonial-author-image gdlr-core-media-image"><img src="{{asset('theme/upload/testimonial-1-150x150.jpg')}}" alt="" width="150" height="150" title="testimonial-1"></div>
                                                                             <div class="gdlr-core-testimonial-author-content">
                                                                                 <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title" style="color: #17449e ;font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;">Mildred Payne</div>
                                                                                 <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption" style="color: #a2a2a2 ;font-size: 15px ;font-style: normal ;font-weight: 400 ;">Allergist</div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li class="gdlr-core-item-mglr">
-                                                                <div class="gdlr-core-testimonial clearfix">
-                                                                    <div class="gdlr-core-testimonial-content-wrap">
-                                                                        <div class="gdlr-core-testimonial-quote gdlr-core-quote-font gdlr-core-skin-icon" style="font-size: 160px ;font-weight: 800 ;margin-top: 70px ;margin-bottom: 0px ;color: #17449e ;">&#8220;</div>
-                                                                        <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" style="font-size: 21px ;font-style: italic ;font-weight: 400 ;letter-spacing: 0px ;color: #7a7a7a ;padding-bottom: 20px ;">
-                                                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                                                                        </div>
-                                                                        <div class="gdlr-core-testimonial-author-wrap clearfix">
-                                                                            <div class="gdlr-core-testimonial-author-image gdlr-core-media-image"><img src="{{asset('theme/upload/testimonial-2-150x150.jpg')}}" alt="" width="150" height="150" title="testimonial-2"></div>
-                                                                            <div class="gdlr-core-testimonial-author-content">
-                                                                                <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title" style="color: #17449e ;font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;">Mary Jane</div>
-                                                                                <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption" style="color: #a2a2a2 ;font-size: 15px ;font-style: normal ;font-weight: 400 ;">Patient</div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li class="gdlr-core-item-mglr">
-                                                                <div class="gdlr-core-testimonial clearfix">
-                                                                    <div class="gdlr-core-testimonial-content-wrap">
-                                                                        <div class="gdlr-core-testimonial-quote gdlr-core-quote-font gdlr-core-skin-icon" style="font-size: 160px ;font-weight: 800 ;margin-top: 70px ;margin-bottom: 0px ;color: #17449e ;">&#8220;</div>
-                                                                        <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content" style="font-size: 21px ;font-style: italic ;font-weight: 400 ;letter-spacing: 0px ;color: #7a7a7a ;padding-bottom: 20px ;">
-                                                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                                                                        </div>
-                                                                        <div class="gdlr-core-testimonial-author-wrap clearfix">
-                                                                            <div class="gdlr-core-testimonial-author-image gdlr-core-media-image"><img src="{{asset('theme/upload/testimonial-4-150x150.jpg')}}" alt="" width="150" height="150" title="testimonial-4"></div>
-                                                                            <div class="gdlr-core-testimonial-author-content">
-                                                                                <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title" style="color: #17449e ;font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;">Paul Smith</div>
-                                                                                <div class="gdlr-core-testimonial-position gdlr-core-info-font gdlr-core-skin-caption" style="color: #a2a2a2 ;font-size: 15px ;font-style: normal ;font-weight: 400 ;">Patient</div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
