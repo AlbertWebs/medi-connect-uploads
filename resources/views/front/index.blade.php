@@ -49,37 +49,26 @@
         </div>
         <div id="Who-We-Are"></div>
 
-        <div class="gdlr-core-pbf-wrapper " style="padding: 92px 0px 0px 0px;" id="gdlr-core-wrapper-2">
+        <div class="gdlr-core-pbf-wrapper " style="padding: 90px 0px 93px 0px;" id="gdlr-core-wrapper-3">
             <div class="gdlr-core-pbf-background-wrap"></div>
             <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
                 <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
-                    <div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first" id="gdlr-core-column-24577">
-                        <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding-right: 55px;">
+                    <div class="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first" id="gdlr-core-column-93651">
+                        <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 40px 0px 0px 0px;">
                             <div class="gdlr-core-pbf-background-wrap"></div>
                             <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                <div class="gdlr-core-pbf-element">
-                                    <div class="gdlr-core-image-item gdlr-core-item-pdb  gdlr-core-center-align gdlr-core-item-pdlr">
-                                        <div class="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle" style="border-width: 0px;"><img src="{{asset('theme/upload/Operation-600x646.png')}}" width="845" height="910" alt=""></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gdlr-core-pbf-column gdlr-core-column-30" id="gdlr-core-column-68606">
-                        <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 30px 0px 0px 0px;">
-                            <div class="gdlr-core-pbf-background-wrap"></div>
-                            <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                <div class="gdlr-core-pbf-element">
-                                    <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-left-align" style="margin-bottom: 25px ;">
-                                        <div class="gdlr-core-divider-container" style="max-width: 82px ;">
-                                            <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #e0e0e0 ;border-width: 3px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;"></div>
+                                {{-- <div class="gdlr-core-pbf-element">
+                                    <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 15px ;">
+                                        <div class="gdlr-core-title-item-title-wrap ">
+                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 26px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;color: #171717 ;">Who We Are<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
+
                                 <div class="gdlr-core-pbf-element">
-                                    <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" style="padding-bottom: 50px ;">
-                                        <div class="gdlr-core-title-item-title-wrap ">
-                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 26px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;color: #171717 ;">About Us<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal ;color: #5f5f5f ;margin-top: 0px ;">
+                                    <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align gdlr-core-no-p-space">
+                                        <div class="gdlr-core-text-box-item-content" style="font-size: 17px ;font-weight: 400 ;letter-spacing: 0px ;text-transform: none ;color: #5f5f5f ;">
+                                            <p>
                                                 With 9 years of experience, we are a trusted international medical travel facilitation company
                                                 that has successfully served over 300 patients from Kenya and around the globe. Our mission is
                                                 to provide unparalleled facilitation services for international patients seeking both surgical and
@@ -88,15 +77,38 @@
                                                 Our dedicated team ensures a seamless experience by coordinating every aspect of the medical journey, from initial consultations and travel arrangements to post-treatment follow-ups. We collaborate with leading healthcare providers to offer personalized care tailored to each patient's unique needs, ensuring the highest standards of safety, comfort, and medical excellence.
                                                 <br><br>
                                                 Beyond our core services, we also offer comprehensive support in navigating complex healthcare systems, managing medical records, and understanding treatment options. Our commitment to transparency, empathy, and continuous improvement drives us to stay at the forefront of medical advancements and patient care innovations.
-                                            </span></div>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
 
+                                <div class="gdlr-core-pbf-element">
+                                    <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align"><a class="gdlr-core-button  gdlr-core-button-gradient gdlr-core-left-align gdlr-core-button-no-border" href="#" style="font-size: 16px ;font-weight: 500 ;letter-spacing: 0px ;color: #ffffff ;padding: 10px 27px 14px 30px;text-transform: none ;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;background: #4d93e9 ;"><span class="gdlr-core-content">Learn More</span><i class="gdlr-core-pos-right arrow_right"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-column gdlr-core-column-30" id="gdlr-core-column-22304">
+                        <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px 30px 0px 30px;padding: 210px 140px 290px 210px;">
+                            <div class="gdlr-core-pbf-background-wrap">
+                                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('theme/upload/Operation-600x646.png')}}') ;background-size: cover ;background-position: center ;" data-parallax-speed="0"></div>
+                            </div>
+                            <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                <div class="gdlr-core-pbf-element">
+                                    <div class="gdlr-core-image-item gdlr-core-item-pdb  gdlr-core-center-align gdlr-core-item-pdlr" style="padding-bottom: 0px ;">
+                                        <div class="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle" style="border-width: 0px;">
+                                            <a class="gdlr-core-lightgallery gdlr-core-js " href="https://www.youtube.com/watch?v=JHYy_SjFHHc"><img src="{{asset('theme/upload/play-icon.png')}}" alt="" width="144" height="144" title="play-icon"></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
 
         <div class="gdlr-core-pbf-wrapper " style="padding: 0px 0px 0px 0px;" data-skin="HP Column SVC Bottom" id="vision-mission">
             <div class="gdlr-core-pbf-background-wrap"></div>
@@ -173,6 +185,74 @@
                 </div>
             </div>
         </div>
+
+        {{--  --}}
+        <div class="gdlr-core-pbf-wrapper " style="padding: 80px 0px 30px 0px;border-width: 0px 0px 1px 0px;border-color: #dedede ;border-style: solid ;" data-skin="Personnel">
+            <div class="gdlr-core-pbf-background-wrap" style="background-color: #f5f5f5 ;"></div>
+            <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                    <div class="gdlr-core-pbf-element">
+                        <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 13px ;">
+                            <div class="gdlr-core-title-item-title-wrap ">
+                                <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 24px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;color: #17449e ;">Our Team<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3></div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-element">
+                        <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-center-align" style="margin-bottom: 50px ;">
+                            <div class="gdlr-core-divider-container" style="max-width: 44px ;">
+                                <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #d8d8d8 ;border-width: 4px;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-element">
+                        <div class="gdlr-core-personnel-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-personnel-item-style-grid-with-background gdlr-core-personnel-style-grid gdlr-core-with-background gdlr-core-item-pdlr" style="padding-bottom: 40px ;">
+                            <div class="gdlr-core-flexslider flexslider gdlr-core-js-2  gdlr-core-bullet-style-round gdlr-core-color-bullet" data-type="carousel" data-column="3" data-move="1" data-nav="bullet" data-nav-parent="gdlr-core-personnel-item" data-disable-autoslide="1">
+                                <ul class="slides">
+                                    <li class="gdlr-core-item-mglr">
+                                        <div class="gdlr-core-personnel-list clearfix gdlr-core-outer-frame-element" style="box-shadow: 0 0 30px rgba(10, 10, 10,0.09); -moz-box-shadow: 0 0 30px rgba(10, 10, 10,0.09); -webkit-box-shadow: 0 0 30px rgba(10, 10, 10,0.09); border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;">
+                                            <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-hover-element gdlr-core-zoom-on-hover">
+                                                <a href="#"><img src="{{url('/')}}/uploads/Sagar-Brahmbhatt-2-1-600x600.jpg" width="600" height="600" alt=""></a>
+                                                <div class="gdlr-core-hover-opacity"></div>
+                                            </div>
+                                            <div class="gdlr-core-personnel-list-content-wrap ">
+                                                <h3 class="gdlr-core-personnel-list-title" style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;"><a href="#">Sagar Brahmbhatt</a></h3>
+                                                <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Founder & CEO</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="gdlr-core-item-mglr">
+                                        <div class="gdlr-core-personnel-list clearfix gdlr-core-outer-frame-element" style="box-shadow: 0 0 30px rgba(10, 10, 10,0.09); -moz-box-shadow: 0 0 30px rgba(10, 10, 10,0.09); -webkit-box-shadow: 0 0 30px rgba(10, 10, 10,0.09); border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;">
+                                            <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-hover-element gdlr-core-zoom-on-hover">
+                                                <a href="#"><img src="{{url('/')}}/uploads/file.enc" width="600" height="600" alt=""></a>
+                                                <div class="gdlr-core-hover-opacity"></div>
+                                            </div>
+                                            <div class="gdlr-core-personnel-list-content-wrap ">
+                                                <h3 class="gdlr-core-personnel-list-title" style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;"><a href="#">Ebby Bright Addai</a></h3>
+                                                <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Public Relations Officer</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="gdlr-core-item-mglr">
+                                        <div class="gdlr-core-personnel-list clearfix gdlr-core-outer-frame-element" style="box-shadow: 0 0 30px rgba(10, 10, 10,0.09); -moz-box-shadow: 0 0 30px rgba(10, 10, 10,0.09); -webkit-box-shadow: 0 0 30px rgba(10, 10, 10,0.09); border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;">
+                                            <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-hover-element gdlr-core-zoom-on-hover">
+                                                <a href="#"><img src="{{url('/')}}/uploads/files.enc" width="600" height="600" alt=""></a>
+                                                <div class="gdlr-core-hover-opacity"></div>
+                                            </div>
+                                            <div class="gdlr-core-personnel-list-content-wrap ">
+                                                <h3 class="gdlr-core-personnel-list-title" style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;"><a href="#">John Kirimi</a></h3>
+                                                <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Digital Communications</div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{--  --}}
 
 
         <div class="gdlr-core-pbf-wrapper " style="padding: 70px 0px 40px 0px;" data-skin="Mediz HP Column SVC" id="what-we-do">
