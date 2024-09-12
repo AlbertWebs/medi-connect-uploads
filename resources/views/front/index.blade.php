@@ -15,7 +15,7 @@
                                 <rs-module id="rev_slider_2_1" style="display:none;" data-version="6.1.5">
                                     <rs-slides>
                                         <rs-slide data-key="rs-3" data-title="Slide" data-thumb="#" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
-                                            <img src="{{asset('theme/upload/slider-hospital-1-1-2.jpg')}}" title="slider-hospital-1-1" width="1800" height="900" class="rev-slidebg" data-no-retina="">
+                                            <img src="{{asset('theme/upload/pexels-shvetsa-3845684.jpg')}}" title="slider-hospital-1-1" width="1800" height="900" class="rev-slidebg" data-no-retina="">
                                             <!---->
                                             <rs-layer id="slider-2-slide-3-layer-3" data-type="text" data-rsp_ch="on" data-xy="xo:15px,15px,15px,47px;yo:162px,162px,162px,107px;" data-text="w:normal;s:125,125,125,61;l:125,125,125,46;fw:600;a:left,left,left,center;" data-frame_1="st:250;sR:250;" data-frame_999="o:0;st:w;sR:8450;" style="z-index:11;font-family:Poppins;">Medi-Connect Africa
                                             </rs-layer>
@@ -91,7 +91,7 @@
                     <div class="gdlr-core-pbf-column gdlr-core-column-30" id="gdlr-core-column-22304">
                         <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="margin: 0px 30px 0px 30px;padding: 210px 140px 290px 210px;">
                             <div class="gdlr-core-pbf-background-wrap">
-                                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('theme/upload/Operation-600x646.png')}}') ;background-size: cover ;background-position: center ;" data-parallax-speed="0"></div>
+                                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('theme/upload/pexels-shvetsa-3845722.jpg')}}') ;background-size: cover ;background-position: center ;" data-parallax-speed="0"></div>
                             </div>
                             <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
                                 <div class="gdlr-core-pbf-element">
