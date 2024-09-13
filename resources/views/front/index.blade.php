@@ -287,6 +287,11 @@
                                     <div class="gdlr-core-pbf-background-wrap"></div>
                                     <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
                                         <div class="gdlr-core-pbf-element">
+                                            <div class="gdlr-core-image-item gdlr-core-item-pdb  gdlr-core-center-align gdlr-core-item-pdlr" style="padding-bottom: 40px ;">
+                                                <div class="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-round" style="border-width: 0px;"><img src="{{url('/')}}/uploads/{{$Service->image}}" width="600" height="325" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="gdlr-core-pbf-element">
                                             <div class="gdlr-core-column-service-item gdlr-core-item-pdb  gdlr-core-left-align gdlr-core-column-service-icon-top gdlr-core-no-caption gdlr-core-item-pdlr" style="padding-bottom: 0px;">
 
                                                 <div class="gdlr-core-column-service-content-wrapper">
