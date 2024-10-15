@@ -211,11 +211,11 @@
                                     <li class="gdlr-core-item-mglr">
                                         <div class="gdlr-core-personnel-list clearfix gdlr-core-outer-frame-element" style="box-shadow: 0 0 30px rgba(10, 10, 10,0.09); -moz-box-shadow: 0 0 30px rgba(10, 10, 10,0.09); -webkit-box-shadow: 0 0 30px rgba(10, 10, 10,0.09); border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;">
                                             <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-hover-element gdlr-core-zoom-on-hover">
-                                                <a href="#"><img src="{{url('/')}}/uploads/Sagar-Brahmbhatt-2-1-600x600.jpg" width="600" height="600" alt=""></a>
+                                                <a href="#"><img style="min-height:386px" src="{{url('/')}}/uploads/66369a68-ba0f-47cd-be31-d606c19bc72d.jpg" width="600" height="600" alt=""></a>
                                                 <div class="gdlr-core-hover-opacity"></div>
                                             </div>
                                             <div class="gdlr-core-personnel-list-content-wrap ">
-                                                <h3 class="gdlr-core-personnel-list-title" style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;"><a href="#">Sagar Brahmbhatt</a></h3>
+                                                <h3 class="gdlr-core-personnel-list-title" style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;"><a href="{{url('/')}}/team/sagar-brahmbhatt">Sagar Brahmbhatt</a></h3>
                                                 <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Founder & CEO</div>
                                             </div>
                                         </div>
@@ -227,8 +227,8 @@
                                                 <div class="gdlr-core-hover-opacity"></div>
                                             </div>
                                             <div class="gdlr-core-personnel-list-content-wrap ">
-                                                <h3 class="gdlr-core-personnel-list-title" style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;"><a href="#">Ebby Bright Addai</a></h3>
-                                                <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Public Relations Officer</div>
+                                                <h3 class="gdlr-core-personnel-list-title" style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;"><a href="{{url('/')}}/team/ebby-bright-addai">Ebby Bright Addai</a></h3>
+                                                <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Co-Founder</div>
                                             </div>
                                         </div>
                                     </li>
@@ -239,12 +239,11 @@
                                                 <div class="gdlr-core-hover-opacity"></div>
                                             </div>
                                             <div class="gdlr-core-personnel-list-content-wrap ">
-                                                <h3 class="gdlr-core-personnel-list-title" style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;"><a href="#">John Kirimi</a></h3>
-                                                <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Digital Communications</div>
+                                                <h3 class="gdlr-core-personnel-list-title" style="font-size: 20px ;font-weight: 700 ;letter-spacing: 0px ;text-transform: none ;"><a href="{{url('/')}}/team/john-kirimi">John Kirimi</a></h3>
+                                                <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 15px ;font-weight: 400 ;font-style: normal ;letter-spacing: 0px ;">Co-Founder</div>
                                             </div>
                                         </div>
                                     </li>
-
                                 </ul>
                             </div>
                         </div>
@@ -337,7 +336,7 @@
                     <div class="gdlr-core-pbf-column gdlr-core-column-30" id="gdlr-core-column-25407">
                         <div class="gdlr-core-pbf-column-content-margin gdlr-core-js  gdlr-core-column-extend-right" style="padding: 175px 0px 55px 60px;">
                             <div class="gdlr-core-pbf-background-wrap">
-                                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('theme/upload/hp1-contact-form-bg.jpg')}}') ;background-size: cover ;background-position: center ;" data-parallax-speed="0"></div>
+                                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('uploads/9945cd78-81eb-435c-b80c-4056f7275881-modified.jpeg')}}') ;background-size: cover ;background-position: center ;" data-parallax-speed="0"></div>
                             </div>
                             <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
                                 <div class="gdlr-core-pbf-element">
@@ -350,7 +349,7 @@
                                     <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align gdlr-core-no-p-space" style="padding-bottom: 40px ;">
                                         <div class="gdlr-core-text-box-item-content" style="font-size: 17px ;font-weight: 400 ;letter-spacing: 0px ;text-transform: none ;color: #9ebeff ;">
                                             <p>We will send you a confirmation within 24 hours.
-                                                <br><strong><span style="color: #ffffff;">Emergency?</span></strong> Call 1-2554-2356-33</p>
+                                                <br><strong><span style="color: #ffffff;">Emergency?</span></strong> Call +254 710 760 015</p>
                                         </div>
                                     </div>
                                 </div>
@@ -435,7 +434,7 @@
                                 </div>
                             </div>
                             <div class="gdlr-core-tab-feature3-item-content-wrap gdlr-core-tab-action-content-wrap clearfix">
-                                <div class="gdlr-core-tab-feature3-content-wrap  gdlr-core-active" data-tab-id="1" style="background-image: url('{{asset('theme/upload/video-featured-1-1.jpg')}}') ;">
+                                <div class="gdlr-core-tab-feature3-content-wrap  gdlr-core-active" data-tab-id="1" style="background-image: url('{{asset('uploads/bbb5a288-0084-4604-9e15-3aaa36952d1a.jpeg')}}') ;">
                                     <div class="gdlr-core-tab-feature3-content-top-overlay" style="background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-moz-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-o-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-webkit-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));"></div>
                                     <div class="gdlr-core-tab-feature3-content-top-overlay2"></div>
                                     <div class="gdlr-core-tab-feature3-content-bottom-overlay" style="background: #113989 ;"></div>
@@ -445,7 +444,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="gdlr-core-tab-feature3-content-wrap " data-tab-id="2" style="background-image: url('{{asset('theme/upload/video-featured-2-1.jpg')}}') ;">
+                                <div class="gdlr-core-tab-feature3-content-wrap " data-tab-id="2" style="background-image: url('{{asset('uploads/a170190f-90a8-461d-8266-9a363c7aa17d.jpeg')}}') ;">
                                     <div class="gdlr-core-tab-feature3-content-top-overlay" style="background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-moz-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-o-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));-webkit-background: linear-gradient(rgba(17, 57, 137, 0), rgba(17, 57, 137, 1));"></div>
                                     <div class="gdlr-core-tab-feature3-content-top-overlay2"></div>
                                     <div class="gdlr-core-tab-feature3-content-bottom-overlay" style="background: #113989 ;"></div>
@@ -485,7 +484,7 @@
 
         <div class="gdlr-core-pbf-wrapper " style="padding: 105px 0px 80px 0px;" id="gdlr-core-wrapper-4">
             <div class="gdlr-core-pbf-background-wrap">
-                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('theme/upload/BG-Testimonial.jpg')}}') ;background-size: cover ;background-position: top center ;" data-parallax-speed="0"></div>
+                <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url('{{asset('uploads/update.png')}}') ;background-size: cover ;background-position: top center ;" data-parallax-speed="0"></div>
             </div>
             <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
                 <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
